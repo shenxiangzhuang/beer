@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Best known on campus were the Monday night beer and statistics sessions Box hosted at his home for students 
   and other researchers. The gatherings sparked lively discussions about how statistics could help solve research 
   problems posed by speakers from a wide range of disciplines.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/beer" # the subpath of your site, e.g. /blog
 url: "https://datahonor.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: shenxiangzhuang
 github_username:  shenxiangzhuang
