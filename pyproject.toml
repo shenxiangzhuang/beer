@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ThornBird"
-version = "0.1.0"
+version = "0.1.0-alpha"
 description = "Thorn Bird: Challenging Problems in Probability and Statistics"
 #license = "MIT"
 authors = ["Xiangzhuang Shen <datahonor@gmail.com>"]
