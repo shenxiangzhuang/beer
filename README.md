@@ -1,2 +1,1 @@
-# thorn-bird
-The Thorn Bird: Challgenging Problems in Probability and Statistics
+# Thorn Bird: Challenging Problems in Probability and Statistics 
