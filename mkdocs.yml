@@ -4,7 +4,7 @@ repo_name: shenxiangzhuang/thorn-bird
 edit_uri: ""
 site_description: Deep Learning from Scratch
 site_author: Xiangzhuang Shen
-copyright: Copyright &copy; 2022 Xiangzhuang Shen
+copyright: Copyright &copy; 2023 Xiangzhuang Shen
 
 # Page tree
 nav:
@@ -13,6 +13,8 @@ nav:
     - fifty/index.md
     - "1. The Sock Drawer": fifty/1_the_sock_drawer.md
   - Changelog: CHANGELOG.md
+not_in_nav: |
+  /fifty/0_problem_template.md
 
 theme:
   name: material
@@ -90,7 +92,8 @@ markdown_extensions:
   - pymdownx.snippets:
       url_download: true
       url_max_size: 33554432
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - abbr
   - admonition
   - footnotes
@@ -100,7 +103,15 @@ watch:
 
 plugins:
   - search
-
+  - mkdocs-simple-hooks:
+      hooks:
+        on_post_build: "docs.hooks:copy_get"
+  - mkdocs-version-annotations:
+      version_added_title: 'new in **\1**'
+      version_changed_title: 'changed in **\1**'
+      version_removed_title: 'removed in **\1**'
+  - include-markdown:
+      preserve_includer_indent: true
 
   - autorefs
   - mkdocstrings:

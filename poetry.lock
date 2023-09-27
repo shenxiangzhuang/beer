@@ -142,6 +142,22 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 reference = "tsinghua"
 
 [[package]]
+name = "bracex"
+version = "2.4"
+description = "Bash style brace expander."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "bracex-2.4-py3-none-any.whl", hash = "sha256:efdc71eff95eaff5e0f8cfebe7d01adf2c8637c8c92edaf63ef348c241a82418"},
+    {file = "bracex-2.4.tar.gz", hash = "sha256:a27eaf1df42cf561fed58b7a8f3fdf129d1ea16a81e1fadd1d17989bc6384beb"},
+]
+
+[package.source]
+type = "legacy"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "tsinghua"
+
+[[package]]
 name = "certifi"
 version = "2023.7.22"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -1020,6 +1036,28 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 reference = "tsinghua"
 
 [[package]]
+name = "mkdocs-include-markdown-plugin"
+version = "6.0.1"
+description = "Mkdocs Markdown includer plugin."
+optional = false
+python-versions = "<3.13,>=3.8"
+files = [
+    {file = "mkdocs_include_markdown_plugin-6.0.1-py3-none-any.whl", hash = "sha256:cbb71f06bf6bd03312f0ff79e1aed198ad13c0ff4fcaf5bb7fe5da385fba4849"},
+    {file = "mkdocs_include_markdown_plugin-6.0.1.tar.gz", hash = "sha256:eb8832b36a72c1c416baec666eeed057c2e613e8b07b353e86fa518157858b0a"},
+]
+
+[package.dependencies]
+wcmatch = ">=8,<9"
+
+[package.extras]
+cache = ["platformdirs"]
+
+[package.source]
+type = "legacy"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "tsinghua"
+
+[[package]]
 name = "mkdocs-material"
 version = "8.5.11"
 description = "Documentation that simply works"
@@ -1053,6 +1091,44 @@ python-versions = ">=3.7"
 files = [
     {file = "mkdocs_material_extensions-1.2-py3-none-any.whl", hash = "sha256:c767bd6d6305f6420a50f0b541b0c9966d52068839af97029be14443849fb8a1"},
     {file = "mkdocs_material_extensions-1.2.tar.gz", hash = "sha256:27e2d1ed2d031426a6e10d5ea06989d67e90bb02acd588bc5673106b5ee5eedf"},
+]
+
+[package.source]
+type = "legacy"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "tsinghua"
+
+[[package]]
+name = "mkdocs-simple-hooks"
+version = "0.1.5"
+description = "Define your own hooks for mkdocs, without having to create a new package."
+optional = false
+python-versions = "*"
+files = [
+    {file = "mkdocs-simple-hooks-0.1.5.tar.gz", hash = "sha256:dddbdf151a18723c9302a133e5cf79538be8eb9d274e8e07d2ac3ac34890837c"},
+    {file = "mkdocs_simple_hooks-0.1.5-py3-none-any.whl", hash = "sha256:efeabdbb98b0850a909adee285f3404535117159d5cb3a34f541d6eaa644d50a"},
+]
+
+[package.dependencies]
+mkdocs = ">=1.2"
+
+[package.extras]
+test = ["pytest (>=4.0)", "pytest-cov"]
+
+[package.source]
+type = "legacy"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "tsinghua"
+
+[[package]]
+name = "mkdocs-version-annotations"
+version = "1.0.0"
+description = "MkDocs plugin to add custom admonitions for documenting version differences"
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "mkdocs-version-annotations-1.0.0.tar.gz", hash = "sha256:6786024b37d27b330fda240b76ebec8e7ce48bd5a9d7a66e99804559d088dffa"},
+    {file = "mkdocs_version_annotations-1.0.0-py3-none-any.whl", hash = "sha256:385004eb4a7530dd87a227e08cd907ce7a8fe21fdf297720a4149c511bcf05f5"},
 ]
 
 [package.source]
@@ -1947,6 +2023,25 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 reference = "tsinghua"
 
 [[package]]
+name = "wcmatch"
+version = "8.5"
+description = "Wildcard/glob file name matcher."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "wcmatch-8.5-py3-none-any.whl", hash = "sha256:14554e409b142edeefab901dc68ad570b30a72a8ab9a79106c5d5e9a6d241bd5"},
+    {file = "wcmatch-8.5.tar.gz", hash = "sha256:86c17572d0f75cbf3bcb1a18f3bf2f9e72b39a9c08c9b4a74e991e1882a8efb3"},
+]
+
+[package.dependencies]
+bracex = ">=2.1.1"
+
+[package.source]
+type = "legacy"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "tsinghua"
+
+[[package]]
 name = "wcwidth"
 version = "0.2.6"
 description = "Measures the displayed width of unicode strings in a terminal"
@@ -2073,5 +2168,5 @@ reference = "tsinghua"
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.8"
-content-hash = "ba360d92b9962ba1565cd61023ef416b871b6b27cb93411678354e2c789f175e"
+python-versions = ">=3.8,<3.13"
+content-hash = "356408374323a570f79b378aae5f64de549f25f1ef4782b2941d3666471360ac"

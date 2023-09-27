@@ -1,1 +1,1 @@
---8<--  "https://raw.githubusercontent.com/shenxiangzhuang/thorn-bird/master/README.md?token=GHSAT0AAAAAACGJKDGF7QTTWHDIRKG5B3GAZIULIOA"
+# Thorn Bird: Challenging Problems in Probability and Statistics 
