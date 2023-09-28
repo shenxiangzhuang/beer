@@ -7,12 +7,12 @@ Problems in `fifty` section come from the book: *Fifty challenging problems in p
 
 ## Problem Template(题目模板)
 ???+ example "Problem Template(题目模板)"
-    === "Code(`docs/fifty/0_problem_template.md`)"
+    === "Code(`docs/util/problem_template.md`)"
 
         ```markdown
-        --8<-- "docs/fifty/0_problem_template.md"
+        --8<-- "docs/util/problem_template.md"
         ```
 
     === "Show"
     
-        {% include-markdown "fifty/0_problem_template.md" %}
+        {% include-markdown "util/problem_template.md" %}

@@ -2,7 +2,7 @@
 
 ## Problem
 
-???+ question
+???+ question "Question"
 
     === "English"
 
@@ -15,7 +15,7 @@
 
 ## Tip
 
-??? tip
+??? tip "Tip"
 
     === "English"
 
@@ -29,7 +29,7 @@
         
 ## Solution
 
-??? success
+??? success "Solution"
     
     === "English"
 
@@ -41,7 +41,7 @@
 
 ## Simulation(Optional)
 
-???+ info
+???+ example "Simulation"
 
     === "English"
 
