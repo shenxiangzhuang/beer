@@ -14,5 +14,5 @@ Problems in `fifty` section come from the book: *Fifty challenging problems in p
         ```
 
     === "Show"
-    
+
         {% include-markdown "fifty/0_problem_template.md" %}
