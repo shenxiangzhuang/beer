@@ -29,16 +29,17 @@
 
     === "English"
 
-        Pell's equation
+        Use probability equations to solve for radicals, Pell's equation
 
     === "中文"
 
-        Pell方程
+        概率等式用于根式求解，Pell方程
 
 
-## Solution
+## Solutions
 
-???+ success "Solution"
+### Solution1: Analysis
+??? success "Solution1: Analysis"
 
     === "English"
 
@@ -83,10 +84,10 @@
 
         And it must hold that $\sqrt{1 - 8R(1-R)}$ is an odd number, which requires $1 - 8R(1-R)$ to be a perfect square.
 
-        We can find values that satisfy these conditions through an iterative approach.
+        We can find values that satisfy these conditions through an iterative approach:
 
         ```python
-        --8<-- "docs/fifty/snippet/1_the_sock_drawer.py:find_numbers"
+        --8<-- "docs/fifty/snippet/1_the_sock_drawer.py:solution1"
         ```
 
         Running the above code gives us:
@@ -140,10 +141,10 @@
 
         且必须有$\sqrt{1 - 8R(1-R)}$为奇数，这就要求$1 - 8R(1-R)$必须为平方数。
 
-        可以通过遍历的方法来求出找出符合条件的值
+        可以通过遍历的方法来求出找出符合条件的值:
 
         ```python
-        --8<-- "docs/fifty/snippet/1_the_sock_drawer.py:find_numbers"
+        --8<-- "docs/fifty/snippet/1_the_sock_drawer.py:solution1"
         ```
 
         运行上述代码可以得到:
@@ -158,14 +159,54 @@
 
         (b): 最少有21只袜子(15红6黑)，此时有$\frac{R}{N}\frac{R-1}{N-1} = \frac{15}{21}\frac{14}{20} = \frac{1}{2}$
 
-## Simulation
 
-???+ example "Simulation"
+### Solution2: Simulation
+
+??? success "Solution2: Simulation"
 
     === "English"
 
-        TODO: Use python code to help solve the pell equation
+        The above method is to analyze the simplified problem first and then solve it. 
+        We can also make full use of the powerful computing power of the computer to directly solve this problem. 
+        Let’s take a look at the "violent aesthetics" of computers!
+
+        ```python
+        --8<-- "docs/fifty/snippet/1_the_sock_drawer.py:solution2"
+        ```
+
+        Running the above code gives us:
+
+        ```
+        R = 3, N = 4, B = N - R = 1
+        R = 15, N = 21, B = N - R = 6
+        ```
+
+        Obtaining the final answers::
+
+        (a): At least 4 socks are needed (3 red and 1 black), in this case, we have
+             $\frac{R}{N}\frac{R-1}{N-1} = \frac{3}{4}\frac{2}{3} = \frac{1}{2}$
+
+        (b): At least 21 socks are needed (15 red and 6 black), in this case, we have
+             $\frac{R}{N}\frac{R-1}{N-1} = \frac{15}{21}\frac{14}{20} = \frac{1}{2}$
+
 
     === "中文"
 
-        TODO: Use python code to help solve the pell equation
+        上面的方法是先分析简化问题之后再求解，我们也可以充分利用计算机强大的计算能力来直接求解本问题。
+        让我们一起来看下计算机的“暴力美学”吧!
+
+        ```python
+        --8<-- "docs/fifty/snippet/1_the_sock_drawer.py:solution2"
+        ```
+
+        运行上述代码同样可以得到:
+        ```
+        R = 3, N = 4, B = N - R = 1
+        R = 15, N = 21, B = N - R = 6
+        ```
+
+        得到相同的答案:
+
+        (a): 最少有4只袜子(3红1黑)，此时有$\frac{R}{N}\frac{R-1}{N-1} = \frac{3}{4}\frac{2}{3} = \frac{1}{2}$
+
+        (b): 最少有21只袜子(15红6黑)，此时有$\frac{R}{N}\frac{R-1}{N-1} = \frac{15}{21}\frac{14}{20} = \frac{1}{2}$

@@ -27,9 +27,11 @@
         提供解题提示与线索。注意不要在这里泄漏答案
 
 
-## Solution
+## Solutions
 
-??? success "Solution"
+### Solution1
+
+??? success "Solution1"
 
     === "English"
 
@@ -39,14 +41,15 @@
 
         解题过程与答案
 
-## Simulation(Optional)
 
-???+ example "Simulation"
+### (Optional)Solution2
+
+??? success "Solution2"
 
     === "English"
 
-        Provide reference code that can solve(or help to solve) the problem
+        The solution
 
     === "中文"
 
-        给出用于解题(或者帮助解题)的代码
+        解题过程与答案
