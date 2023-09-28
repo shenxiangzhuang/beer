@@ -166,8 +166,8 @@
 
     === "English"
 
-        The above method is to analyze the simplified problem first and then solve it. 
-        We can also make full use of the powerful computing power of the computer to directly solve this problem. 
+        The above method is to analyze the simplified problem first and then solve it.
+        We can also make full use of the powerful computing power of the computer to directly solve this problem.
         Let’s take a look at the "violent aesthetics" of computers!
 
         ```python

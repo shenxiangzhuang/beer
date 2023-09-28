@@ -20,6 +20,7 @@ def find_numbers(r_limit: int = 50):
             n = int((1 + int(math.sqrt(under_sqrt))) / 2)
             print(f"R = {r}, N = {n}, B = N - R = {n - r}")
 
+
 # --8<-- [end:solution1]
 
 
@@ -33,5 +34,6 @@ def simulation(r_limit: int = 50, n_limit: int = 50):
         for n in range(r + 1, n_limit):
             if is_close(1 / 2, (r / n) * ((r - 1) / (n - 1))):
                 print(f"R = {r}, N = {n}, B = N - R = {n - r}")
+
 
 # --8<-- [end:solution2]
