@@ -6,7 +6,7 @@
 
     === "English"
 
-        A drawer contains red socks and black socks. When two socks are drawn at random, 
+        A drawer contains red socks and black socks. When two socks are drawn at random,
         the probability that both are red is $\frac{1}{2}$
 
         (a) How small can the number of socks in the drawer be?
@@ -32,20 +32,20 @@
         Pell's equation
 
     === "中文"
-        
+
         Pell方程
 
-        
+
 ## Solution
 
 ??? success "Solution"
-    
+
     === "English"
 
         TODO: The solution
 
     === "中文"
-        
+
         TODO: The solution
 
 ## Simulation
@@ -57,5 +57,5 @@
         TODO: Use python code to help solve the pell equation
 
     === "中文"
-        
+
         TODO: Use python code to help solve the pell equation
