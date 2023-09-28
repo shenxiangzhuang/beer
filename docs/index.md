@@ -1,1 +1,1 @@
-# Thorn Bird: Challenging Problems in Probability and Statistics 
+# Beer: Challenging Problems in Probability and Statistics 

@@ -1,6 +1,6 @@
-site_name: "Thorn Bird: Challenging Problems in Probability and Statistics"
-repo_url: https://github.com/shenxiangzhuang/thorn-bird
-repo_name: shenxiangzhuang/thorn-bird
+site_name: "Beer: Challenging Problems in Probability and Statistics"
+repo_url: https://github.com/shenxiangzhuang/beer
+repo_name: shenxiangzhuang/beer
 edit_uri: ""
 site_description: Deep Learning from Scratch
 site_author: Xiangzhuang Shen
@@ -70,7 +70,7 @@ extra_javascript:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/shenxiangzhuang/thorn-bird
+      link: https://github.com/shenxiangzhuang/beer
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/xiangzhuang-shen-a81825157/
 

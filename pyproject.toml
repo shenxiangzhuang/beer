@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "ThornBird"
+name = "Beer"
 version = "0.1.0-alpha"
-description = "Thorn Bird: Challenging Problems in Probability and Statistics"
+description = "Beer: Challenging Problems in Probability and Statistics"
 #license = "MIT"
 authors = ["Xiangzhuang Shen <datahonor@gmail.com>"]
 readme = "README.md"
-homepage = "https://github.com/shenxiangzhuang/thorn-bird"
-repository = "https://github.com/shenxiangzhuang/thorn-bird"
+homepage = "https://github.com/shenxiangzhuang/beer"
+repository = "https://github.com/shenxiangzhuang/beer"
 keywords=[
     "machine learning",
     "statistics",
@@ -23,7 +23,7 @@ classifiers=[
     "Topic :: Scientific/Engineering :: Mathematics",
 ]
 packages = [
-    { include = "thorn", from = "." }
+    { include = "beer", from = "." }
 ]
 include = [
 #    "LICENSE",
