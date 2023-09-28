@@ -1,1 +1,1 @@
-# Beer: Challenging Problems in Probability and Statistics
+--8<-- "https://raw.githubusercontent.com/shenxiangzhuang/beer/master/README.md"
