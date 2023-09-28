@@ -14,7 +14,7 @@ nav:
     - "1. The Sock Drawer": fifty/1_the_sock_drawer.md
   - Changelog: CHANGELOG.md
 not_in_nav: |
-  /fifty/0_problem_template.md
+  /util/*.md
 
 theme:
   name: material
