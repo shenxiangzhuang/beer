@@ -1,11 +1,11 @@
 # Beer: Challenging Problems in Probability and Statistics
 
 ## What beer?
-<center>
 
-![](https://news.wisc.edu/story_images/5489/original/GeorgeEPBox-1.jpg)
 
-</center>
+<p align="center">
+  <img src="https://news.wisc.edu/story_images/5489/original/GeorgeEPBox-1.jpg" alt="Example Image" width="200" height="300">
+</p>
 
 You know, the
 [Monday night beer and statistics sessions](https://news.wisc.edu/renowned-statistician-george-box-dies-at-93/)
