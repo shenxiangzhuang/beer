@@ -53,7 +53,7 @@
 
         Simplifying this equation, we get:
 
-        $$N^2 - N + 2R(R-1) = 0$$
+        $$N^2 - N + 2R(1-R) = 0$$
 
         Since our goal is to find the minimum value of $N$, combining the above conditions,
         the original problem can be formulated as the following integer programming problem:
