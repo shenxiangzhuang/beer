@@ -62,6 +62,7 @@ pymdown-extensions = "^10.3"
 mkdocs-simple-hooks = "^0.1.5"
 mkdocs-version-annotations = "^1.0.0"
 mkdocs-include-markdown-plugin = "^6.0.1"
+markdown-exec = {extras = ["ansi"], version = "^1.6.0"}
 
 [[tool.poetry.source]]
 name = "tsinghua"

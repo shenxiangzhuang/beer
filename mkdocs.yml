@@ -105,6 +105,7 @@ watch:
 
 plugins:
   - search
+  - markdown-exec
   - mkdocs-simple-hooks:
       hooks:
         on_post_build: "docs.hooks:copy_get"

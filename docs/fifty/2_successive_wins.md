@@ -37,7 +37,7 @@
 
 ## Solutions
 
-### Solution1
+### Solution1: Analysis
 
 ??? success "Solution1: Analysis"
 
@@ -62,7 +62,7 @@
 
         The probability of Elmer winning the reward in this case is:
 
-        $fcf + fc(1-f) + (1-f)cf = fc(2-f)$
+        $$fcf + fc(1-f) + (1-f)cf = fc(2-f)$$
 
         Similarly, if we consider the sequence CFC,
         Elmer can win the reward in the following three cases:
@@ -140,7 +140,7 @@
         即Elmer选择CFC的顺序比赛赢得奖励的概率更高
 
 
-### Solution2
+### Solution2: Simulation
 
 
 ??? success "Solution2: Simulation"
@@ -149,27 +149,17 @@
 
         We can simulate the CFC and FCF sequences using the following approach:
 
-        ```python
+        ```python exec="true" source="material-block" session="fifty-2"
         --8<-- "docs/fifty/snippet/2_successive_wins.py:solution2"
         ```
 
-        Running `simulation()` produces the following output
-        (since the probabilities `f` and `c` for winning against the father and the champion are randomly generated using `get_prior_prob`, the results may vary for each simulation. However, we can observe that the probability for the CFC sequence is slightly higher):
+        Since the probabilities `f` and `c` for winning against the father and the champion are randomly generated using `get_prior_prob`, the results may vary for each simulation. However, we can observe that the probability for the CFC sequence is slightly higher.
 
-        ```python
-        FCF: 0.4759, CFC: 0.6061
-        ```
 
         If we carefully analyze this simulation experiment, we can identify a limitation: it only simulates one pair of `f` and `c` probabilities. Therefore, the higher probability for CFC compared to FCF might be due to chance. To validate if CFC consistently has a higher probability than FCF, we need to simulate different configurations of `f` and `c`.
 
-        ```python
+        ```python exec="true" source="material-block" session="fifty-2"
         --8<-- "docs/fifty/snippet/2_successive_wins.py:solution2-extend"
-        ```
-
-        Running `simulation_extend()` produces the following output:
-
-        ```python
-        (CFC win prob > FCF win prob)'s prob: 1.0
         ```
 
         Hence, we have sufficient data to conclude that the probability of CFC being greater than FCF is consistent.
@@ -179,30 +169,19 @@
 
         可以通过下面的方式进行CFC，FCF两个模式的比赛模拟:
 
-        ```python
+        ```python exec="true" source="material-block" session="fifty-2"
         --8<-- "docs/fifty/snippet/2_successive_wins.py:solution2"
         ```
 
-        运行`simulation()`可以得到如下输出
-        (因为这里赢得父亲和冠军的概率`f`, `c`是通过`get_prior_prob`随机生成，
-        所以每次模拟的结果会不相同。但是都能够看到CFC顺序的概率更高一些):
-
-        ```python
-        FCF: 0.4759, CFC: 0.6061
-        ```
+        因为这里赢得父亲和冠军的概率`f`, `c`是通过`get_prior_prob`随机生成，
+        所以每次模拟的结果会不相同。但是都能够看到CFC顺序的概率更高一些.
 
         如果我们仔细思考这个模拟实验就会发现其中还有不足的地方，那就是这里只模拟了一对
         `f`, `c`概率下的情况。那么这里模拟得到的CFC的概率大于FCF的概率不排除是偶然的原因。
         所以我们需要模拟在不同`f`, `c`配置下是否都有CFC的概率大于FCF的概率。
 
-        ```python
+        ```python exec="true" source="material-block" session="fifty-2"
         --8<-- "docs/fifty/snippet/2_successive_wins.py:solution2-extend"
-        ```
-
-        运行`simulation_extend()`可以得到如下输出
-
-        ```python
-        (CFC win prob > FCF win prob)'s prob: 1.0
         ```
 
         至此，我们有充足的数据说明CFC的概率大于FCF的概率。

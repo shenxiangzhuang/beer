@@ -40,6 +40,8 @@ def simulation(run_num: int = 10000) -> None:
     print(f"FCF: {fcf_win_prob}, CFC: {cfc_win_prob}")
 
 
+simulation()
+
 # --8<-- [end:solution2]
 
 
@@ -54,5 +56,7 @@ def simulation_extend(run_num: int = 10000) -> None:
             count += 1
     print(f"(CFC win prob > FCF win prob)'s prob: {count / 100}")
 
+
+simulation_extend()
 
 # --8<-- [end:solution2-extend]

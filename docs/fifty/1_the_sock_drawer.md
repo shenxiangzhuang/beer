@@ -86,18 +86,11 @@
 
         We can find values that satisfy these conditions through an iterative approach:
 
-        ```python
+        ```python exec="true" source="material-block" session="fifty-1"
         --8<-- "docs/fifty/snippet/1_the_sock_drawer.py:solution1"
         ```
 
-        Running the above code gives us:
-
-        ```
-        R = 3, N = 4, B = N - R = 1
-        R = 15, N = 21, B = N - R = 6
-        ```
-
-        Obtaining the final answers::
+        Obtaining the final answers:
 
         (a): At least 4 socks are needed (3 red and 1 black), in this case, we have
              $\frac{R}{N}\frac{R-1}{N-1} = \frac{3}{4}\frac{2}{3} = \frac{1}{2}$
@@ -143,14 +136,8 @@
 
         可以通过遍历的方法来求出找出符合条件的值:
 
-        ```python
+        ```python exec="true" source="material-block" session="fifty-1"
         --8<-- "docs/fifty/snippet/1_the_sock_drawer.py:solution1"
-        ```
-
-        运行上述代码可以得到:
-        ```
-        R = 3, N = 4, B = N - R = 1
-        R = 15, N = 21, B = N - R = 6
         ```
 
         得到最终答案:
@@ -170,18 +157,11 @@
         We can also make full use of the powerful computing power of the computer to directly solve this problem.
         Let’s take a look at the "violent aesthetics" of computers!
 
-        ```python
+        ```python exec="true" source="material-block" session="fifty-1"
         --8<-- "docs/fifty/snippet/1_the_sock_drawer.py:solution2"
         ```
 
-        Running the above code gives us:
-
-        ```
-        R = 3, N = 4, B = N - R = 1
-        R = 15, N = 21, B = N - R = 6
-        ```
-
-        Obtaining the final answers::
+        Obtaining the final answers:
 
         (a): At least 4 socks are needed (3 red and 1 black), in this case, we have
              $\frac{R}{N}\frac{R-1}{N-1} = \frac{3}{4}\frac{2}{3} = \frac{1}{2}$
@@ -195,14 +175,8 @@
         上面的方法是先分析简化问题之后再求解，我们也可以充分利用计算机强大的计算能力来直接求解本问题。
         让我们一起来看下计算机的“暴力美学”吧!
 
-        ```python
+        ```python exec="true" source="material-block" session="fifty-1"
         --8<-- "docs/fifty/snippet/1_the_sock_drawer.py:solution2"
-        ```
-
-        运行上述代码同样可以得到:
-        ```
-        R = 3, N = 4, B = N - R = 1
-        R = 15, N = 21, B = N - R = 6
         ```
 
         得到相同的答案:
