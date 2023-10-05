@@ -1,7 +1,7 @@
 # --8<-- [start:solution2]
 import random
 
-from typing import Tuple, Literal
+from typing import Literal, Tuple
 
 
 def get_prior_prob() -> Tuple[float, float]:
@@ -19,11 +19,8 @@ def play(win_prob: float) -> bool:
 
 
 def play_simulation(
-        f: float,
-        c: float,
-        mode: Literal["FCF", "CFC"],
-        run_num: int = 10000
-        ) -> float:
+    f: float, c: float, mode: Literal["FCF", "CFC"], run_num: int = 10000
+) -> float:
     win_count = 0
     for _ in range(run_num):
         if mode == "FCF":
