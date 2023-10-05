@@ -13,6 +13,7 @@ nav:
     - fifty/index.md
     - "1. The Sock Drawer": fifty/1_the_sock_drawer.md
     - "2. Successive Wins": fifty/2_successive_wins.md
+    - "3. Flippant Jury": fifty/3_flippant_jury.md
 
   - Changelog: CHANGELOG.md
 not_in_nav: |
