@@ -12,6 +12,8 @@ nav:
   - Fifty:
     - fifty/index.md
     - "1. The Sock Drawer": fifty/1_the_sock_drawer.md
+    - "2. Successive Wins": fifty/2_successive_wins.md
+
   - Changelog: CHANGELOG.md
 not_in_nav: |
   /util/*.md
