@@ -90,7 +90,7 @@
         The probability of obtaining the correct verdict at this time
         can be approximated by simulating the judgment process of a three-person jury.
 
-        ```python exec="true" source="material-block" session="fifty-2"
+        ```python exec="true" source="material-block" session="fifty-3"
         --8<-- "docs/fifty/snippet/3_flippant_jury.py:solution2"
         ```
 
@@ -99,6 +99,6 @@
 
         可以通过模拟三人陪审团的判决过程来近似得到此时得到正确判决的概率。
 
-        ```python exec="true" source="material-block" session="fifty-2"
+        ```python exec="true" source="material-block" session="fifty-3"
         --8<-- "docs/fifty/snippet/3_flippant_jury.py:solution2"
         ```
