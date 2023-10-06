@@ -1,6 +1,11 @@
 # --8<-- [start:solution2]
 import random
-from typing import Tuple, List, Dict
+
+from io import StringIO
+from typing import Dict, List, Tuple
+
+import matplotlib.colors as colors
+import matplotlib.pyplot as plt
 
 
 def toss() -> Tuple[float, float]:
@@ -24,10 +29,11 @@ def is_win(x: float, y: float) -> bool:
     return False
 
 
-def simulation(run_nums: int = 1000000,
-               verbose: bool = True,
-               ) -> Dict[str, List]:
-    positions = {"xs": [], "ys": [], "win": []}
+def simulation(
+    run_nums: int = 1000000,
+    verbose: bool = True,
+) -> Dict[str, List]:
+    positions: Dict[str, List] = {"xs": [], "ys": [], "win": []}
     win_count = 0
     for _ in range(run_nums):
         x, y = toss()
@@ -53,9 +59,6 @@ simulation()
 
 
 # --8<-- [start:solution2-plot]
-from io import StringIO
-import matplotlib.pyplot as plt
-import matplotlib.colors as colors
 
 
 def plot_simulation():
@@ -63,17 +66,18 @@ def plot_simulation():
 
     positions = simulation(10000, verbose=False)
 
-    cmap = colors.ListedColormap(['pink', 'lightgreen'])
+    cmap = colors.ListedColormap(["pink", "lightgreen"])
     bounds = [0, 0.5, 1]
     norm = colors.BoundaryNorm(bounds, cmap.N)
 
     # Create the plot
-    ax.scatter(positions["xs"], positions["ys"], s=1,
-               c=positions["win"], cmap=cmap, norm=norm)
+    ax.scatter(
+        positions["xs"], positions["ys"], s=1, c=positions["win"], cmap=cmap, norm=norm
+    )
     # Set labels and title
-    ax.set_xlabel('X')
-    ax.set_ylabel('Y')
-    ax.set_title('Simulation')
+    ax.set_xlabel("X")
+    ax.set_ylabel("Y")
+    ax.set_title("Simulation")
     ax.grid(True)
     fig.tight_layout()
 
@@ -86,4 +90,3 @@ plot_simulation()
 
 
 # --8<-- [end:solution2-plot]
-
