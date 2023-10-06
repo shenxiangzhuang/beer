@@ -58,7 +58,7 @@
 
         we can deduce that
 
-        $$E(T) - \frac{5}{6}E(T) = \frac{1}{6}E(T) = \sum_{t=1}^{1}{t \cdot \frac{1}{6} \cdot (\frac{5}{6})^{t-1}} = 1$$
+        $$E(T) - \frac{5}{6}E(T) = \frac{1}{6}E(T) = \frac{1}{6}(1 + \sum_{i=1}^{\infty}{(\frac{5}{6})^i}) = 1$$
 
         Hence,
 
@@ -92,12 +92,7 @@
 
         得
 
-        $$
-        E(T) - \frac{5}{6}E(T)
-        = \frac{1}{6}E(T)
-        = \sum_{t=1}^{1}{t \cdot \frac{1}{6} \cdot (\frac{5}{6})^{t-1}}
-        = 1
-        $$
+        $$E(T) - \frac{5}{6}E(T) = \frac{1}{6}E(T) = \frac{1}{6}(1 + \sum_{i=1}^{\infty}{(\frac{5}{6})^i}) = 1$$
 
         $$E(T) = 6$$
 
