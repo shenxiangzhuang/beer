@@ -6,12 +6,12 @@
 
     === "English"
 
-        Chuck-a-Luck is a gambling game often played at carnivals and gambling houses. 
-        A player may bet on anyone of the numbers 1,2,3,4,5,6. 
-        Three dice are rolled. If the player's number appears on one, two, or three of the dice, 
-        he receives respectively one, two, or three times his original stake plus his own money back; 
-        otherwise he loses his stake. What is the player's expected loss per unit stake? 
-        (Actually the player may distribute stakes on several numbers, 
+        Chuck-a-Luck is a gambling game often played at carnivals and gambling houses.
+        A player may bet on anyone of the numbers 1,2,3,4,5,6.
+        Three dice are rolled. If the player's number appears on one, two, or three of the dice,
+        he receives respectively one, two, or three times his original stake plus his own money back;
+        otherwise he loses his stake. What is the player's expected loss per unit stake?
+        (Actually the player may distribute stakes on several numbers,
         but each such stake can be regarded as a separate bet.)
 
     === "中文"
@@ -28,7 +28,7 @@
 
     === "English"
 
-        Since we are looking for expectations, we need to first define the random variable, 
+        Since we are looking for expectations, we need to first define the random variable,
         then find out the probability of its distribution, and finally find the expectations.
 
     === "中文"
@@ -45,23 +45,23 @@
     === "English"
 
         Let $R$ be the player's reward and $S$ be the original stake. Then the player's expected reward is $E(R)$, and the expected loss is $E(L) = -E(R)$.
-    
+
         To find $E(R)$, we first list the distribution of $R$ as follows:
-        
+
         |   | $R$   | Probability | Calculation Result |
         |---|-------|-------------|--------------------|
         | 1 | $-S$  | $\left[\frac{5}{6}\right]^3$ | $\frac{125}{216}$ |
         | 2 | $S$   | $\frac{1}{6}\cdot\frac{5}{6}\cdot\frac{5}{6} + \frac{5}{6}\cdot\frac{1}{6}\cdot\frac{5}{6} + \frac{5}{6}\cdot\frac{5}{6}\cdot\frac{1}{6}$ | $\frac{75}{216}$ |
         | 3 | $2S$  | $\frac{1}{6}\cdot\frac{1}{6}\cdot\frac{5}{6} + \frac{1}{6}\cdot\frac{5}{6}\cdot\frac{1}{6} + \frac{5}{6}\cdot\frac{1}{6}\cdot\frac{1}{6}$ | $\frac{15}{216}$ |
         | 4 | $3S$  | $\left[\frac{1}{6}\right]^3$ | $\frac{1}{216}$ |
-        
+
         From this, we can compute:
-        
+
         $$
         E(R) = -S\cdot\frac{125}{216} + S\cdot\frac{75}{216} + 2S\cdot\frac{15}{216} + 3S\cdot\frac{1}{216} = -\frac{17}{216}S
         $$
-        
-        $$ 
+
+        $$
         E(L) = -E(R) = \frac{17}{216}S
         $$
 
@@ -70,21 +70,21 @@
         记玩家的奖励为$R$，原始的赌注为$S$，那么玩家的预期奖励为$E(R)$,
         预期的损失为$E(L) = -E(R)$.
         因为要求$E(R)$，所以我们先列出$R$的分布，如下：
-        
+
         |   | $R$   | Probability | Calculation Result |
         |---|-------|-------------|--------------------|
         | 1 | $-S$  | $\left[\frac{5}{6}\right]^3$ | $\frac{125}{216}$ |
         | 2 | $S$   | $\frac{1}{6}\cdot\frac{5}{6}\cdot\frac{5}{6} + \frac{5}{6}\cdot\frac{1}{6}\cdot\frac{5}{6} + \frac{5}{6}\cdot\frac{5}{6}\cdot\frac{1}{6}$ | $\frac{75}{216}$ |
         | 3 | $2S$  | $\frac{1}{6}\cdot\frac{1}{6}\cdot\frac{5}{6} + \frac{1}{6}\cdot\frac{5}{6}\cdot\frac{1}{6} + \frac{5}{6}\cdot\frac{1}{6}\cdot\frac{1}{6}$ | $\frac{15}{216}$ |
         | 4 | $3S$  | $\left[\frac{1}{6}\right]^3$ | $\frac{1}{216}$ |
-        
+
         由此计算出
-        
+
         $$
             E(R) = -S\cdot\frac{125}{216} + S\cdot\frac{75}{216} + 2S\cdot\frac{15}{216} + 3S\cdot\frac{1}{216} = -\frac{17}{216}S
         $$
 
-        $$ 
+        $$
             E(L) = -E(R) = \frac{17}{216}S
         $$
 
@@ -100,9 +100,9 @@
         ```
 
     === "中文"
-        
+
         可以直接模拟整个赌博过程来获取近似的结果:
-        
+
         ```python exec="true" source="material-block" session="fifty-6"
         --8<-- "docs/fifty/snippet/6_chuck_a_luck.py:solution2"
         ```
