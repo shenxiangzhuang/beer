@@ -1,3 +1,8 @@
-html {
-    scroll-behavior: smooth;
+.metadata{
+    list-style:none;
+    padding:0;
+    margin:0;
+    margin-bottom: 15px;
+    color: #999;
+    font-size:0.85em;
 }
