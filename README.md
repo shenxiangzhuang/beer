@@ -1,5 +1,8 @@
 # Beer: Challenging Problems in Probability and Statistics
 
+## Documentation
+- [https://shenxiangzhuang.github.io/beer/](https://shenxiangzhuang.github.io/beer/)
+
 ## What beer?
 
 
