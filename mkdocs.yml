@@ -2,9 +2,9 @@ site_name: "Beer: Challenging Problems in Probability and Statistics"
 repo_url: https://github.com/shenxiangzhuang/beer
 repo_name: shenxiangzhuang/beer
 edit_uri: ""
-site_description: Deep Learning from Scratch
+site_description: A collection of challenging problems in probability and statistics, with solutions and discussions.
 site_author: Xiangzhuang Shen
-copyright: Copyright &copy; 2023 Xiangzhuang Shen
+copyright: Copyright &copy; 2023 - 2024 Xiangzhuang Shen
 
 # Page tree
 nav:
@@ -110,17 +110,13 @@ watch:
 
 plugins:
   - search
-  - git-authors:
-      show_contribution: true
-      show_line_count: true
-      show_email_address: true
-      count_empty_lines: true
-      fallback_to_empty: false
-      authorship_threshold_percent: 10
-      enabled: true
-      strict: true
   - git-revision-date-localized:
       enable_creation_date: true
+  - git-committers:
+      repository: shenxiangzhuang/beer
+      branch: master
+      cache_dir: docs/assets/git-committers
+      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
   - markdown-exec
   - mkdocs-simple-hooks:
       hooks:
