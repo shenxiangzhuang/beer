@@ -24,7 +24,7 @@ not_in_nav: |
 
 theme:
   name: material
-  custom_dir: docs/template
+#  custom_dir: docs/template
   icon:
     repo: fontawesome/brands/github
   language: en
