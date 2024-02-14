@@ -1486,18 +1486,19 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 reference = "tsinghua"
 
 [[package]]
-name = "mkdocs-git-authors-plugin"
-version = "0.7.2"
-description = "Mkdocs plugin to display git authors of a page"
+name = "mkdocs-git-committers-plugin-2"
+version = "2.2.3"
+description = "An MkDocs plugin to create a list of contributors on the page. The git-committers plugin will seed the template context with a list of GitHub or GitLab committers and other useful GIT info such as last modified date"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8,<4"
 files = [
-    {file = "mkdocs-git-authors-plugin-0.7.2.tar.gz", hash = "sha256:f541730e4cabdafa0ac758c94d28ba5e8ddca4c859e5de4c89f1226cb6ccd0ad"},
-    {file = "mkdocs_git_authors_plugin-0.7.2-py3-none-any.whl", hash = "sha256:c8a2784a867db79ad3b477a96ee96875d17b09192b6d3be71f08df25afff76c4"},
+    {file = "mkdocs_git_committers_plugin_2-2.2.3-py3-none-any.whl", hash = "sha256:0f20d61a9315174f30d5a0266d4a457d3d88909ca5c5bd7d0e0dd2e1841f2af0"},
 ]
 
 [package.dependencies]
-mkdocs = ">=1.0"
+gitpython = "*"
+mkdocs = ">=1.0.3"
+requests = "*"
 
 [package.source]
 type = "legacy"
@@ -2848,4 +2849,4 @@ reference = "tsinghua"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.13"
-content-hash = "6cf9e0b9c8f11f1fef6ca78fe8a6ac1310a42be86b0afc2be7b278e1bb058f5f"
+content-hash = "3f5f01ff30107f5aad7f6fc2f2548acc1b59f66994a4b2949bf1779d47d22876"
