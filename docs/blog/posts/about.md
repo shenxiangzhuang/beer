@@ -27,16 +27,16 @@ toc_depth: 3
 <!-- more -->
 
 这种积极开放，共同探讨统计学如何用于解决问题的方式着实令人神往。
-即使是在读书的时候我也很少有机会和大家像这样一起讨论有趣的问题。 
+即使是在读书的时候我也很少有机会和大家像这样一起讨论有趣的问题。
 
 
-后来读研有时会和室友@SY一起解一些概率统计/算法题目，有些是游戏相关面试题(1)，有些是自己遇到的一些中大复试考研题(2) , 
+后来读研有时会和室友@SY一起解一些概率统计/算法题目，有些是游戏相关面试题(1)，有些是自己遇到的一些中大复试考研题(2) ,
 有些来自Tomorrow学长的[博客](https://yuanhang0.github.io/), 这期间我也自己写过一些相关的文章(3)。
 { .annotate }
 
-1. :fontawesome-regular-face-laugh-wink: [游戏中的概率问题——有趣的概率问题（一）](https://mp.weixin.qq.com/s/mCZB1NMsdvg7og6IVWVs2g): 
+1. :fontawesome-regular-face-laugh-wink: [游戏中的概率问题——有趣的概率问题（一）](https://mp.weixin.qq.com/s/mCZB1NMsdvg7og6IVWVs2g):
 之前和@SY讨论过的一些问题感觉很有意思，就拜托他找时间整理了下来。
-2. :fontawesome-regular-face-laugh-wink: [A Fair Game Problem](https://yuanhang0.github.io/posts/A-Fair-Game-Problem): 
+2. :fontawesome-regular-face-laugh-wink: [A Fair Game Problem](https://yuanhang0.github.io/posts/A-Fair-Game-Problem):
 中大考研复试的一道题，@SY给我讲了两遍没听懂，又找Tomorrow学长帮忙写的一个解析:)
 3. [Three doors and three prisoners](https://datahonor.com/datascience/statistics/three-doors-and-three-prisoners/)
 
