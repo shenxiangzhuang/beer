@@ -110,17 +110,17 @@ watch:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      enable_creation_date: true
   - git-committers:
       repository: shenxiangzhuang/beer
       branch: master
       cache_dir: docs/assets/git-committers
-      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
+#      token: !!python/object/apply:os.getenv [ "BEER_MKDOCS_GIT_COMMITTERS_APIKEY" ]
+  - git-revision-date-localized:
+      enable_creation_date: true
   - markdown-exec
-  - mkdocs-simple-hooks:
-      hooks:
-        on_post_build: "docs.hooks:copy_get"
+#  - mkdocs-simple-hooks:
+#      hooks:
+#        on_post_build: "docs.hooks:copy_get"
   - mkdocs-version-annotations:
       version_added_title: 'new in **\1**'
       version_changed_title: 'changed in **\1**'
