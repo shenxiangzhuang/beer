@@ -39,7 +39,6 @@ toc_depth: 3
 中大考研复试的一道题，@SY给我讲了两遍没听懂，又找Tomorrow学长帮忙写的一个解析:)
 3. [Three doors and three prisoners](https://datahonor.com/datascience/statistics/three-doors-and-three-prisoners/)
 
-
 这些问题的本身就趣味十足，解决的方法更是灵活多变: 可以用朴素的概率统计思想求解，也可以用很“取巧”(1)的方式来快速得到答案，
 也可以写代码来模拟问题得到数值解。对我来说，当一个有趣的问题通过多种截然不同的方式得到相同的结果时，那种喜悦是难以言表的。
 { .annotate }
