@@ -66,13 +66,13 @@ theme:
 
 docs_dir: docs
 
-extra_css:
-  - css/extra.css
+#extra_css:
+#  - css/extra.css
 
-extra_javascript:
-  - js/config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+#extra_javascript:
+#  - js/config.js
+#  - https://polyfill.io/v3/polyfill.min.js?features=es6
+#  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
   social:
@@ -110,13 +110,13 @@ watch:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      enable_creation_date: true
   - git-committers:
       repository: shenxiangzhuang/beer
       branch: master
       cache_dir: docs/assets/git-committers
-      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
+#      token: !!python/object/apply:os.getenv [ "BEER_MKDOCS_GIT_COMMITTERS_APIKEY" ]
+  - git-revision-date-localized:
+      enable_creation_date: true
   - markdown-exec
   - mkdocs-simple-hooks:
       hooks:
