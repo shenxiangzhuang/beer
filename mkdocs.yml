@@ -17,7 +17,8 @@ nav:
     - "4. Trials until first success": fifty/4_first_success.md
     - "5. Coin in Square": fifty/5_coin_in_square.md
     - "6. Chuck a Luck": fifty/6_chuck_a_luck.md
-
+  - Blog:
+      - blog/index.md
   - Changelog: CHANGELOG.md
 not_in_nav: |
   /util/*.md
@@ -109,6 +110,8 @@ watch:
   - ./docs
 
 plugins:
+  - blog:
+      draft: true
   - search
   - git-committers:
       repository: shenxiangzhuang/beer
