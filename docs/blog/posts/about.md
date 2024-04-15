@@ -16,7 +16,7 @@ toc_depth: 3
 
 相信很多统计学相关专业的同学都知道Box-Cox变换，这里Box就是统计学巨擘George E. P. Box.
 在其讣告[Renowned statistician George Box dies at 93](https://news.wisc.edu/renowned-statistician-george-box-dies-at-93/)
-中有这么一段关于Monday night beer and statistics sessions介绍(这在其传记中也有相关的介绍)。
+中有这么一段关于Monday night beer and statistics sessions的介绍(这在其传记中也有相关的介绍)。
 
 !!! quote "Monday night beer and statistics sessions"
 
