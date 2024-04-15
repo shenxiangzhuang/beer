@@ -39,6 +39,7 @@ python = ">=3.9,<3.13"
 pre-commit = "^3.4.0"
 ipython = "^8.7.0"
 tqdm = {version = "^4.0.0", optional = true}
+mkdocstrings-python = "^1.9.2"
 
 
 [tool.poetry.group.lint.dependencies]
