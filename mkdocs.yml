@@ -25,9 +25,10 @@ not_in_nav: |
 
 theme:
   name: material
-#  custom_dir: docs/template
+  custom_dir: overrides
   icon:
     repo: fontawesome/brands/github
+    annotation: material/plus-circle
   language: en
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -84,6 +85,9 @@ extra:
 
 markdown_extensions:
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - md_in_html
   - def_list
   - pymdownx.tasklist:
