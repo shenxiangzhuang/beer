@@ -73,15 +73,14 @@ Wilcoxon-Mann-Whitney statistic等等这些都变得鲜活起来——这同样�
 
 {% include-markdown "fifty/1_the_sock_drawer.md" heading-offset=3 %}
 
-
 ### Future
 
 关于:beer:的未来，现在的计划主要是分成三部分: 类似Fifty这种习题集单独一个部分，各类记录在各个地方的无出处可考的题目作为一个部分，
 最后一部分是工业界一些的实际的案例。
 目前是专注在第一部分，后续的Roadmap会更新到[Issue](https://github.com/shenxiangzhuang/beer/issues)。
 
-
 ## Help Wanted
+
 个人的力量终究是有限的，欢迎大家一起参与建设，一起感受概率统计的乐趣。
 欢迎各类贡献: 提建议，提供题目，提供解答等都可以。
 
