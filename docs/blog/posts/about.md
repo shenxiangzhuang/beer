@@ -57,7 +57,7 @@ toc_depth: 3
 特质使得其成为算法落地时很好的选择。
 
 这种在真实世界发挥作用的方式让我对概率统计的认识得到了很大的拓展。读书时候学到的那些抽象的概念: 帕累托分布，游程检验，
-Wilcoxon-Mann-Whitney statistic等等这些都变得鲜活起来——这同样让我感觉非常的快乐。
+Wilcoxon-Mann-Whitney statistic等等这些都变得鲜活起来——这同样让我感觉非常地快乐。
 
 我和同事提过说有机会的话我也想试试搞下类似Monday night beer and statistics sessions的东西，
 他说很感兴趣，让我到时候喊他一起——可惜由于种种原因，此事一直未能成行:)
