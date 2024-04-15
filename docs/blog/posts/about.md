@@ -61,7 +61,6 @@ Wilcoxon-Mann-Whitney statistic等等这些都变得鲜活起来——这同样�
 我和同事提过说有机会的话我也想试试搞下类似Monday night beer and statistics sessions的东西，
 他说很感兴趣，让我到时候喊他一起——可惜由于种种原因，此事一直未能成行:)
 
-
 ### Now
 
 后来偶然看到*Fifty challenging problems in probability*这本书，发现了书中记录了很多有趣的问题。
