@@ -16,7 +16,7 @@ toc_depth: 3
 
 相信很多统计学相关专业的同学都知道Box-Cox变换，这里Box就是统计学巨擘George E. P. Box.
 在其讣告[Renowned statistician George Box dies at 93](https://news.wisc.edu/renowned-statistician-george-box-dies-at-93/)
-中有这么一段关于**Monday night beer and statistics sessions**介绍(这在其传记中也有相关的介绍)。
+中有这么一段关于Monday night beer and statistics sessions介绍(这在其传记中也有相关的介绍)。
 
 !!! quote "Monday night beer and statistics sessions"
 
@@ -37,7 +37,7 @@ toc_depth: 3
 1. :fontawesome-regular-face-laugh-wink: [游戏中的概率问题——有趣的概率问题（一）](https://mp.weixin.qq.com/s/mCZB1NMsdvg7og6IVWVs2g): 
 之前和@SY讨论过的一些问题感觉很有意思，就拜托他找时间整理了下来。
 2. :fontawesome-regular-face-laugh-wink: [A Fair Game Problem](https://yuanhang0.github.io/posts/A-Fair-Game-Problem): 
-中大考研复试的一道题，@SY给我讲了两遍没听懂，又找Tomorro学长帮忙写的一个解析:)
+中大考研复试的一道题，@SY给我讲了两遍没听懂，又找Tomorrow学长帮忙写的一个解析:)
 3. [Three doors and three prisoners](https://datahonor.com/datascience/statistics/three-doors-and-three-prisoners/)
 
 
