@@ -15,7 +15,7 @@
 
         桥牌是用一叠普通的 52 张牌打的，4 种花色各 13 张，4 名玩家每人发 13 张。
         我们经常读到有人在桥牌上拿到了 13 张黑桃。 一副洗好后的牌，你拿到完美牌（同花色 13 张）的机会有多大？
-        
+
 
 
 ## Tip
@@ -45,7 +45,7 @@
         $$
             \binom{52}{13}\binom{39}{13}\binom{26}{13}\binom{13}{13}
         $$
-        
+
         We draw the same suit, and since there is no restriction on the suit,
         it can be any one of the 4 suits:
 
@@ -76,7 +76,7 @@
         $$
             \binom{52}{13}\binom{39}{13}\binom{26}{13}\binom{13}{13}
         $$
-        
+
         我们抓出同花的情况，因为没有限制花色，所以可以是4个花色中的任意一个:
 
         $$
@@ -107,9 +107,9 @@
 
     === "English"
         We can directly simulate the card drawing process to get exactly the same result.
-        Here we simulate the situation of drawing one card in each round: a total of 4 cards are drawn in each round, 
+        Here we simulate the situation of drawing one card in each round: a total of 4 cards are drawn in each round,
         one of which is of the same suit.
-        During simulation, we calculate the probability of each round and multiply the probabilities of each round 
+        During simulation, we calculate the probability of each round and multiply the probabilities of each round
         to get the final probability.
 
         The simulation results are as follows:

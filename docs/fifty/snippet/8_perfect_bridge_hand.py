@@ -1,6 +1,6 @@
 # --8<-- [start:solution1]
-from math import factorial
 from fractions import Fraction
+from math import factorial
 
 
 def calc():
@@ -24,7 +24,11 @@ def combination_number(n: int, m: int) -> Fraction:
 def calc_prob():
     prob = 4
     for i in range(13):
-        numerator = combination_number(13-i, 1) * combination_number(39 - 3 * i, 3) * factorial(3)
+        numerator = (
+            combination_number(13 - i, 1)
+            * combination_number(39 - 3 * i, 3)
+            * factorial(3)
+        )
         denominator = combination_number(52 - 4 * i, 4) * factorial(4)
         prob *= Fraction(numerator, denominator)
     print(f"prob = {prob} = {float(prob)}")
@@ -35,6 +39,6 @@ calc_prob()
 # --8<-- [end:solution2]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     prob = calc_prob()
     print(prob, float(prob))
