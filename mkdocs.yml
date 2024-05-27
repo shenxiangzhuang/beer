@@ -17,6 +17,8 @@ nav:
     - "4. Trials until first success": fifty/4_first_success.md
     - "5. Coin in Square": fifty/5_coin_in_square.md
     - "6. Chuck a Luck": fifty/6_chuck_a_luck.md
+    - "8. Perfect Bridge Hand": fifty/8_perfect_bridge_hand.md
+
   - Blog:
       - blog/index.md
   - Changelog: CHANGELOG.md
@@ -73,7 +75,9 @@ extra_css:
 
 extra_javascript:
   - js/config.js
+  - js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
