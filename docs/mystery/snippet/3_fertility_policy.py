@@ -1,5 +1,6 @@
 # --8<-- [start:solution]
 import random
+
 from enum import Enum
 
 
@@ -27,8 +28,8 @@ def simulation(run_nums: int = 100000) -> None:
     for _ in range(run_nums):
         female_count += family_event()
         male_count += 1
-    print(f'Males: {male_count}, Females: {female_count}\n')
-    print(f'Males/Female: {male_count / female_count}\n')
+    print(f"Males: {male_count}, Females: {female_count}\n")
+    print(f"Males/Female: {male_count / female_count}\n")
 
 
 simulation()

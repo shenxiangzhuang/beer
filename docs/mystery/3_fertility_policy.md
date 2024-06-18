@@ -188,7 +188,7 @@
 
     === "English"
 
-        We can simulate the birth process to obtain the numerical solution 
+        We can simulate the birth process to obtain the numerical solution
         of the gender ratio under the current fertility policy:
 
         ```python exec="true" source="material-block" session="fifty-3"
