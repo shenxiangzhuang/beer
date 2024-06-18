@@ -51,20 +51,21 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
   features:
-    # - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - announce.dismiss
     - content.code.annotate
-    # - content.tabs.link
+    - content.tabs.link
     - content.tooltips
-    # - header.autohide
-    # - navigation.expand
-    - navigation.indexes
-    # - navigation.instant
-    # - navigation.prune
-    - navigation.sections
-    - navigation.tabs
-    # - navigation.tabs.sticky
-    - navigation.top
+    - header.autohide
+    - navigation.instant
     - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.prune
+    - navigation.sections
+    - navigation.top
     - search.highlight
     - search.share
     - search.suggest
