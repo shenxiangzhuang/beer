@@ -162,9 +162,9 @@
         即每个家庭平均有1个女孩，所以男女比例为1:1。
 
 
-### Solution3
+### Solution3: Elegant Analysis
 
-??? success "Solution3: Elegant Analysis"
+??? success "Solution3"
 
     === "English"
 
