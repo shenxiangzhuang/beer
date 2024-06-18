@@ -29,7 +29,7 @@
 
 ## Solutions
 
-### Solution1
+### Solution1: Analysis
 
 ??? success "Solution1"
 
@@ -123,7 +123,7 @@
         \end{align}
         $$
 
-### Solution2
+### Solution2: Analysis
 
 ??? success "Solution2"
 
@@ -162,7 +162,7 @@
         即每个家庭平均有1个女孩，所以男女比例为1:1。
 
 
-### Solution3
+### Solution3: Elegant Analysis
 
 ??? success "Solution3"
 
@@ -181,4 +181,25 @@
         无论生育政策如何，最终都是一系列相互独立的生育事件，所以最终的男女比例是1:1。
 
 
-### TODO: Solution4: Simulation
+### Solution4: Simulation
+
+
+??? success "Solution4"
+
+    === "English"
+
+        We can simulate the birth process to obtain the numerical solution
+        of the gender ratio under the current fertility policy:
+
+        ```python exec="true" source="material-block" session="fifty-3"
+        --8<-- "docs/mystery/snippet/3_fertility_policy.py:solution"
+        ```
+
+
+    === "中文"
+
+        我们可以通过模拟生育的过程来得到当前生育政策下性别比例的数值解:
+
+        ```python exec="true" source="material-block" session="fifty-3"
+        --8<-- "docs/mystery/snippet/3_fertility_policy.py:solution"
+        ```
