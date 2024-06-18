@@ -4,15 +4,8 @@
 - [https://shenxiangzhuang.github.io/beer/](https://shenxiangzhuang.github.io/beer/)
 
 ## What beer?
+- See this blog: [Why 🍺](https://datahonor.com/beer/blog/2024/04/15/about-beer/)
 
-
-<p align="center">
-  <img src="https://news.wisc.edu/story_images/5489/original/GeorgeEPBox-1.jpg" alt="Example Image" width="200" height="300">
-</p>
-
-You know, the
-[Monday night beer and statistics sessions](https://news.wisc.edu/renowned-statistician-george-box-dies-at-93/)
-from George E. P. Box.
 
 ## License
 - Non-code: CC BY-NC-SA 4.0
