@@ -18,6 +18,9 @@ nav:
     - "5. Coin in Square": fifty/5_coin_in_square.md
     - "6. Chuck a Luck": fifty/6_chuck_a_luck.md
     - "8. Perfect Bridge Hand": fifty/8_perfect_bridge_hand.md
+  - Mystery:
+    - mystery/index.md
+    - "3. Fertility Policy": mystery/3_fertility_policy.md
 
   - Blog:
       - blog/index.md
