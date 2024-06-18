@@ -24,6 +24,9 @@ nav:
   - Blog:
       - blog/index.md
   - Changelog: CHANGELOG.md
+  - Author's website: https://shenxiangzhuang.github.io/
+
+
 not_in_nav: |
   /util/*.md
 
