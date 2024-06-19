@@ -20,6 +20,8 @@ nav:
   - Mystery:
     - mystery/index.md
     - "3. Fertility Policy": mystery/3_fertility_policy.md
+  - Miscellaneous:
+    - misc/index.md
 
   - Blog:
       - blog/index.md
