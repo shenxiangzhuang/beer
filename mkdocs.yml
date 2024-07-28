@@ -132,7 +132,6 @@ plugins:
   - git-committers:
       repository: shenxiangzhuang/beer
       branch: master
-      cache_dir: docs/assets/git-committers
       token: !!python/object/apply:os.getenv [ "BEER_MKDOCS_GIT_COMMITTERS_APIKEY" ]
   - git-revision-date-localized:
       enable_creation_date: true
