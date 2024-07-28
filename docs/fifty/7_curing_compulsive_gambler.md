@@ -28,14 +28,14 @@
 ??? tip "Tip"
 
     === "English"
-        
-        The core of the problem is to find out how Mr. Brown's expectation 
-        of winning changes after adding the bet with his friend. Since we are looking for expectation, 
-        we need to define the random variable first, then find the probability of its distribution, 
+
+        The core of the problem is to find out how Mr. Brown's expectation
+        of winning changes after adding the bet with his friend. Since we are looking for expectation,
+        we need to define the random variable first, then find the probability of its distribution,
         and finally find the expectation.
 
     === "中文"
-        
+
         问题的核心是求加上和朋友的赌约之后，布朗先生赢钱期望的变化如何。
         既然是求期望，那么我们需要先定义随机变量，然后找出其分布的概率，最后求期望即可。
 
@@ -65,7 +65,7 @@
 
         From this, we can calculate
 
-        
+
         $$
         E(R_1) = \sum_{i=0}^{36}{(36(i-1)) \cdot \binom{36}{i} (\frac{37}{38})^{36-i}(\frac{1}{38})^i} ≈ -1.8947368421052684
         $$
@@ -76,12 +76,12 @@
 
         ???+ tip "Bet Analysis"
 
-            The bet essentially states that if Mr. Brown loses money after 36 games of roulette, he gives his friend an additional $20. 
+            The bet essentially states that if Mr. Brown loses money after 36 games of roulette, he gives his friend an additional $20.
             Conversely, if Mr. Brown breaks even or wins money, his friend gives him $20.
 
             Based on the above analysis, Mr. Brown will only lose money overall if he loses all 36 games. If he wins even one game, he won't lose money, and if he wins 2 or more games, he'll make money.
             In other words, Mr. Brown will only have to pay his friend an extra $20 if he loses all 36 games. In all other cases, he will earn $20 from his friend.
-                
+
         Let's denote Mr. Brown's expected winnings in this case as $R_2$, so his expected winnings are $E(R_2)$.
         To calculate $E(R_2)$, we first need to list the distribution of $R_2$, as follows:
 
@@ -96,10 +96,10 @@
         | ...       | ...   | ...                                                   |
 
         </div>
-        
+
         From this, we can calculate
 
-        
+
         $$
         E(R_2) = (-36 - 20)\cdot \frac{37}{38})^{36} + \sum_{i=1}^{36}{(36(i-1) + 20) \cdot \binom{36}{i} (\frac{37}{38})^{36-i}(\frac{1}{38})^i} ≈ 2.7904190810856586
         $$
@@ -122,7 +122,7 @@
 
         由此计算出
 
-        
+
         $$
         E(R_1) = \sum_{i=0}^{36}{(36(i-1)) \cdot \binom{36}{i} (\frac{37}{38})^{36-i}(\frac{1}{38})^i} ≈ -1.8947368421052684
         $$
@@ -138,7 +138,7 @@
 
             根据上面的分析，布朗先生只有36局全输的情况下才会最终输钱，只要赢1局就能不输钱，赢2局或以上就能赢钱。
             也就是说，布朗先生只有在36局全输的情况下才会额外输给朋友20美元，其他情况下都会从朋友那里赚20美元。
-                
+
         记此时布朗先生赢钱的期望为$R_2$，那么布朗先生的预期赢钱数为$E(R_2)$,
         因为要求$E(R_2)$，所以我们先列出$R_2$的分布, 如下:
 
@@ -153,15 +153,15 @@
         | ...       | ...   | ...                                                   |
 
         </div>
-        
+
         由此计算出
 
-        
+
         $$
         E(R_2) = (-36 - 20)\cdot \frac{37}{38})^{36} + \sum_{i=1}^{36}{(36(i-1) + 20) \cdot \binom{36}{i} (\frac{37}{38})^{36-i}(\frac{1}{38})^i} ≈ 2.7904190810856586
         $$
 
-        
+
 ??? tip "概率&期望的具体计算 (Calculation of probability & expectation)"
 
     ```python exec="true" source="material-block" session="fifty-7"
