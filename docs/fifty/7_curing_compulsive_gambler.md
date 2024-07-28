@@ -178,8 +178,17 @@
 
     === "English"
 
-        TODO
+        The overall process of the game is relatively simple, and we can simulate it through the following code:
+
+        ```python exec="true" source="material-block" session="fifty-7"
+        --8<-- "docs/fifty/snippet/7_curing_compulsive_gambler.py:solution2"
+        ```
+
 
     === "中文"
 
-        TODO
+        游戏的过程总体比较简单，我们可以通过下面的代码来模拟:
+
+        ```python exec="true" source="material-block" session="fifty-7"
+        --8<-- "docs/fifty/snippet/7_curing_compulsive_gambler.py:solution2"
+        ```
