@@ -51,3 +51,8 @@ def calc_expectation_with_bet() -> float:
 print(f"Expectation: {calc_expectation()}\n")
 print(f"Expectation with bet: {calc_expectation_with_bet()}")
 # --8<-- [end:solution1]
+
+
+# --8<-- [start:solution2]
+
+# --8<-- [end:solution2]
