@@ -44,7 +44,7 @@
 
 ### Solution1: Analysis
 
-???+ success "Solution1: Analysis"
+??? success "Solution1: Analysis"
 
     === "English"
 
