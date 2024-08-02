@@ -1,11 +1,10 @@
 [tool.poetry]
 name = "Beer"
-version = "0.1.0-alpha"
+version = "0.1.0"
 description = "Beer: Challenging Problems in Probability and Statistics"
-#license = "MIT"
 authors = ["Xiangzhuang Shen <datahonor@gmail.com>"]
 readme = "README.md"
-homepage = "https://github.com/shenxiangzhuang/beer"
+homepage = "https://shenxiangzhuang.github.io/beer/"
 repository = "https://github.com/shenxiangzhuang/beer"
 keywords=[
     "machine learning",
@@ -16,9 +15,15 @@ classifiers=[
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Science/Research",
     "Intended Audience :: Developers",
-#    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Education",
+    "Natural Language :: Chinese (Simplified)",
+    "Natural Language :: English",
+    "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering",
     "Topic :: Scientific/Engineering :: Mathematics",
 ]
@@ -26,7 +31,8 @@ packages = [
     { include = "beer", from = "." }
 ]
 include = [
-#    "LICENSE",
+    "LICENSE-Apache-2.0",
+    "LICENSE-CC-BY-NC-SA",
     "README.md",
 ]
 
@@ -36,10 +42,8 @@ python = ">=3.9,<3.13"
 
 
 [tool.poetry.group.dev.dependencies]
-pre-commit = "^3.4.0"
 ipython = "^8.7.0"
 tqdm = {version = "^4.0.0", optional = true}
-mkdocstrings-python = "^1.9.2"
 
 
 [tool.poetry.group.lint.dependencies]
@@ -48,6 +52,7 @@ pylint = "^2.15.3"
 flake8 = "^5.0.4"
 mypy = "^0.981"
 isort = "^5.10.1"
+pre-commit = "^3.4.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.1.3"
@@ -69,6 +74,7 @@ mkdocs-version-annotations = "^1.0.0"
 mkdocs-include-markdown-plugin = "^6.0.1"
 markdown-exec = {extras = ["ansi"], version = "^1.6.0"}
 matplotlib = "^3.8.0"
+mkdocstrings-python = "^1.9.2"
 
 
 [[tool.poetry.source]]
@@ -79,7 +85,7 @@ priority = "primary"
 
 [[tool.poetry.source]]
 name = "PyPI"
-priority = "primary"
+priority = "supplemental"
 
 [build-system]
 requires = ["poetry-core"]
