@@ -119,7 +119,7 @@
 
         $$
             \frac{d}{dx} \left(
-                e^x - \frac{e^x -1}{x}   
+                e^x - \frac{e^x -1}{x}
             \right) = \sum_{n\in\mathbb{N}} n \left(
                     \frac{1}{n!} - \frac{1}{(n+1)!}
             \right) x^{n-1}.
@@ -130,7 +130,7 @@
         $$
             \begin{align}
                 E[f(X)] &= \frac{d}{dx} \left(
-                    e^x - \frac{e^x -1}{x}   
+                    e^x - \frac{e^x -1}{x}
                 \right) \Big|_{x=1} \\
                 &= e - 1.
             \end{align}
@@ -196,7 +196,7 @@
 
         $$
             \frac{d}{dx} \left(
-                e^x - \frac{e^x -1}{x}   
+                e^x - \frac{e^x -1}{x}
             \right) = \sum_{n\in\mathbb{N}} n \left(
                     \frac{1}{n!} - \frac{1}{(n+1)!}
             \right) x^{n-1}。
@@ -207,7 +207,7 @@
         $$
             \begin{align}
                 E[f(X)] &= \frac{d}{dx} \left(
-                    e^x - \frac{e^x -1}{x}   
+                    e^x - \frac{e^x -1}{x}
                 \right) \Big|_{x=1} \\
                 &= e - 1。
             \end{align}
