@@ -138,5 +138,77 @@
 
     === "中文"
 
-        <!-- TODO -->
+        对于 $n\in \mathbb{N}$，考虑集合 $C_n = \{
+            \gamma \in X \mid f(\gamma) \ge n
+        \}$，以及 $A_n = \{
+            \gamma \in X \mid f(\gamma) = n
+        \}$。再定义 $A_\infty = \{
+            \gamma \in X \mid f(\gamma) = \infty
+        \}$。
 
+        显然 $C_1 \supset C_2 \supset \dots \supset C_\infty$ 并且 $C_1 = X$。
+        同样显然，所有的 $C_n$ 都是可测集，因为它们可以表示为可测集的可数并集。
+
+        此外，集合 $\{A_n \mid n\in\mathbb{N}\}\cup\{A_\infty\}$ 是互不相交的，
+        并且 $X = C_\infty\cup\bigcup_{n\in\mathbb{N}} C_n$。
+        同时，$A_n = C_n \setminus C_{n+1}$，所以 $p(A_n) = p(C_n) - p(C_{n+1})$。
+
+        我们可以看到，$p(C_n)$ 可以很容易地计算出来，
+        因为它是前 $n$ 个点按递增顺序排列的概率。因此，
+
+        $$
+            \begin{align}
+                p(A_n) &= p(\{
+                    \gamma\in X \mid \gamma_1 < \gamma_2 < \dots < \gamma_n
+                \}) \\
+                &= \int_0^1 \int^1_{\gamma_1} \dots \int^1_{\gamma_{n-1}} d\gamma_n \dots d\gamma_2 d\gamma_1 \\
+                &= \frac{1}{n!}。
+            \end{align}
+        $$
+
+        因此，我们可以看到，$p(A_n) = \frac{1}{n!} - \frac{1}{(n+1)!}$。接下来
+
+        $$
+            \begin{align}
+                p(A_\infty) &= 1 - p\left(
+                    \bigcup_{n\in\mathbb{N}} A_n
+                \right) \\
+                &= 1 - \sum_{n\in\mathbb{N}} p(A_n) \\
+                &= 1 - \sum_{n\in\mathbb{N}} \left(
+                    \frac{1}{n!} - \frac{1}{(n+1)!}
+                \right) \\
+                &= 0。
+            \end{align}
+        $$
+
+        最后，我们可以计算 $E[f(X)]$ 如下：
+
+        $$
+            \begin{align}
+                E[f(X)] &= \infty \times p(A_\infty) + \sum_{n\in\mathbb{N}} n p(A_n) \\
+                &= 0 + \sum_{n\in\mathbb{N}} n \left(
+                    \frac{1}{n!} - \frac{1}{(n+1)!}
+                \right)。
+            \end{align}
+        $$
+
+        通过泰勒展开，我们可以看到
+
+        $$
+            \frac{d}{dx} \left(
+                e^x - \frac{e^x -1}{x}   
+            \right) = \sum_{n\in\mathbb{N}} n \left(
+                    \frac{1}{n!} - \frac{1}{(n+1)!}
+            \right) x^{n-1}。
+        $$
+
+        因此，
+
+        $$
+            \begin{align}
+                E[f(X)] &= \frac{d}{dx} \left(
+                    e^x - \frac{e^x -1}{x}   
+                \right) \Big|_{x=1} \\
+                &= e - 1。
+            \end{align}
+        $$
