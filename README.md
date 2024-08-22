@@ -14,7 +14,7 @@
   <img src="/asset/qr_code/mathew.png" style="width: 30%;" />
 </div>
 
-当群聊二维码失效时，可以添加我的微信(微信号: `MathewShen`)，备注"beer"，我会拉你进群。
+当群聊二维码失效时，可以先添加我的微信(微信号: `MathewShen`)，备注"beer"。
 
 ## License
 - Non-code: CC BY-NC-SA 4.0
