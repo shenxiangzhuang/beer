@@ -79,7 +79,7 @@
 
         $$
             \begin{align}
-                p(A_n) &= p(\{
+                p(C_n) &= p(\{
                     \gamma\in X \mid \gamma_1 < \gamma_2 < \dots < \gamma_n
                 \}) \\
                 &= \int_0^1 \int^1_{\gamma_1} \dots \int^1_{\gamma_{n-1}} d\gamma_n \dots d\gamma_2 d\gamma_1 \\
@@ -158,7 +158,7 @@
 
         $$
             \begin{align}
-                p(A_n) &= p(\{
+                p(C_n) &= p(\{
                     \gamma\in X \mid \gamma_1 < \gamma_2 < \dots < \gamma_n
                 \}) \\
                 &= \int_0^1 \int^1_{\gamma_1} \dots \int^1_{\gamma_{n-1}} d\gamma_n \dots d\gamma_2 d\gamma_1 \\
