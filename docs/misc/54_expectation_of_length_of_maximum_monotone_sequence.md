@@ -38,11 +38,11 @@
 
     === "English"
 
-        <!-- TODO -->
+        Consider the probability that the monotone growing sequence stops at $n$.
 
     === "中文"
 
-        <!-- TODO -->
+        考虑单调增长序列在$n$处停止的概率。
 
 
 ## Solutions
