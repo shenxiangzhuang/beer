@@ -10,8 +10,8 @@
 ## WeChat Group
 我们有一个小的微信群，欢迎加入一起讨论有趣的问题！
 
-<img src="/asset/qr_code/ds_group.png" style="width: 30%" />
-<img src="/asset/qr_code/mathew.png" style="width: 31%;" />
+<img src="/asset/qr_code/ds_group.png" style="width: 20%" />
+<img src="/asset/qr_code/mathew.png" style="width: 21%;" />
 
 当群聊二维码失效时，可以添加我的微信(微信号: `MathewShen`)，备注"beer"，我会拉你进群。
 
