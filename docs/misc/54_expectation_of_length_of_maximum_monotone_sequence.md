@@ -52,7 +52,95 @@
 
     === "English"
 
-        <!-- TODO -->
+        For $n\in \mathbb{N}$,
+        consider set $C_n = \\{
+            \gamma \in X \mid f(\gamma) \ge n
+        \\}$,
+        and $A_n = \\{
+            \gamma \in X \mid f(\gamma) = n
+        \\}$.
+        And $A_\infty = \\{
+            \gamma \in X \mid f(\gamma) = \infty
+        \\}$.
+
+        It is obvious that $C_1 \supset C_2 \supset \dots \supset C_\infty$
+        and $C_1 = X$.
+        It is also obvious that all $C_n$ are measurable,
+        as it can be written as countable union of measurable sets.
+
+        Furthermore, sets in $\\{A_n \mid n\in\mathbb{N}\\}\cup\\{A_\infty\\} $
+        are mutually disjoint
+        and $X = c\infty\cup\bigcup_{n\in\mathbb{N}} C_n$.
+        Also, $A_n = C_n \setminus C_{n+1}$. So $p(A_n) = p(C_n) - p(C_{n+1})$.
+
+        We can see that, $p(C_n)$ can be easily calculated
+        as it is the probability that the first $n$ points are in increasing order.
+        Thus,
+
+        $$
+            \begin{align}
+                p(A_n) &= p(\\{
+                    \gamma\in X \mid \gamma_1 < \gamma_2 < \dots < \gamma_n
+                \\}) \\
+                &= \int_0^1 \int^1_{\gamma_1} \dots \int^1_{\gamma_{n-1}} d\gamma_n \dots d\gamma_2 d\gamma_1 \\
+                &= \frac{1}{n!}
+            \end{align}.
+        $$
+
+        And therefore, we can see that,
+        $p(A_n) = \frac{1}{n!} - \frac{1}{(n+1)!}$.
+        And
+        
+        $$
+            \begin{align}
+                p(A_\infty) &= 1 - p\left(
+                    \bigcup_{n\in\mathbb{N}} A_n
+                \right) \\
+                &= 1 - \sum_{n\in\mathbb{N}} p(A_n) \\
+                &= 1 - \sum_{n\in\mathbb{N}} \left(
+                    \frac{1}{n!} - \frac{1}{(n+1)!}
+                \right) \\
+                &= 0
+            \end{align}.
+        $$
+
+        Finally, we can calculate $E[f(X)]$ as:
+
+        $$
+            \begin{align}
+                E[f(X)] &= \infty \times p(A_\infty) + \sum_{n\in\mathbb{N}} n p(A_n) \\
+                &= 0 + \sum_{n\in\mathbb{N}} n \left(
+                    \frac{1}{n!} - \frac{1}{(n+1)!}
+                \right)
+            \end{align}.
+        $$
+
+        To calculate the above sum, we can use the fact that
+
+        $$
+            e^x = \sum_{n\in\mathbb{N}} \frac{x^n}{n!}.
+        $$
+
+        Thus, we can see that
+
+        $$
+            \frac{d}{dx} \left(
+                e^x - \frac{e^x -1}{x}   
+            \right) = \sum_{n\in\mathbb{N}} n \left(
+                    \frac{1}{n!} - \frac{1}{(n+1)!}
+            \right) x^{n-1}.
+        $$
+
+        Therefore,
+
+        $$
+            \begin{align}
+                E[f(X)] &= \frac{d}{dx} \left(
+                    e^x - \frac{e^x -1}{x}   
+                \right) \Big|_{x=1} \\
+                &= e - 1
+            \end{align}.
+        $$
 
     === "中文"
 
