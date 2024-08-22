@@ -23,6 +23,7 @@ nav:
     - "3. Fertility Policy": mystery/3_fertility_policy.md
   - Miscellaneous:
     - misc/index.md
+    - "1. Expectation of Length of Maximum Monotone Sequence": misc/1_expectation_of_length_of_maximum_monotone_sequence.md
 
   - Blog:
       - blog/index.md
