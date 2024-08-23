@@ -6,7 +6,7 @@ authors = [
     {name = "Xiangzhuang Shen", email = "datahonor@gmail.com"},
 ]
 readme = "README.md"
-requires-python = ">=3.9,<3.13"
+requires-python = ">=3.12,<3.13"
 license = {file = "LICENSE-Apache-2.0"}
 keywords = ["machine learning", "statistics", "probablity"]
 classifiers = [
@@ -79,44 +79,3 @@ line-length = 88
 [tool.isort]
 profile = "black"
 lines_between_types = 1
-
-[tool.pylint.'MASTER']
-fail-under = 8.0
-
-[tool.pylint.'MESSAGES CONTROL']
-disable = [
-    "missing-module-docstring",
-    "missing-class-docstring",
-    "too-few-public-methods",
-    "useless-super-delegation",
-]
-
-[tool.pylint.'FORMAT']
-max-line-length = 88
-
-[tool.pytest.ini_options]
-addopts = "-v --cov=toydl --cov-fail-under 0 --cov-report=term --cov-report=xml --cov-report=html"
-testpaths = [
-    "tests",
-]
-markers = [
-    "operator: operator related tests",
-]
-
-[tool.coverage.run]
-omit = [
-    "*/__init__.py",
-]
-
-[tool.coverage.report]
-exclude_lines = [
-    'pragma: no cover',
-    'raise AssertionError',
-    'raise NotImplementedError',
-    'if __name__ == .__main__.:',
-    'def __repr__',
-]
-fail_under = 90
-precision = 1
-skip_empty = true
-sort = "-Cover"
