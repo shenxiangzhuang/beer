@@ -1,17 +1,15 @@
-[tool.poetry]
+[project]
 name = "Beer"
 version = "0.1.0"
 description = "Beer: Challenging Problems in Probability and Statistics"
-authors = ["Xiangzhuang Shen <datahonor@gmail.com>"]
-readme = "README.md"
-homepage = "https://shenxiangzhuang.github.io/beer/"
-repository = "https://github.com/shenxiangzhuang/beer"
-keywords=[
-    "machine learning",
-    "statistics",
-    "probablity",
+authors = [
+    {name = "Xiangzhuang Shen", email = "datahonor@gmail.com"},
 ]
-classifiers=[
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+license = {file = "LICENSE-Apache-2.0"}
+keywords = ["machine learning", "statistics", "probablity"]
+classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Science/Research",
     "Intended Audience :: Developers",
@@ -27,71 +25,53 @@ classifiers=[
     "Topic :: Scientific/Engineering",
     "Topic :: Scientific/Engineering :: Mathematics",
 ]
-packages = [
-    { include = "beer", from = "." }
+dependencies = [
+    "mkdocs>=1.5.3",
+    "mkdocs-material>=9.4.14",
+    "mkdocs-bibtex>=2.11.0",
+    "mkdocstrings>=0.24.0",
+    "mkdocs-material-extensions>=1.3.1",
+    "mkdocs-git-revision-date-localized-plugin>=1.2.4",
+    "mkdocs-git-committers-plugin-2>=2.3.0",
+    "mkdocs-autorefs>=0.5.0",
+    "pymdown-extensions>=10.3",
+    "mkdocs-simple-hooks>=0.1.5",
+    "mkdocs-version-annotations>=1.0.0",
+    "mkdocs-include-markdown-plugin>=6.0.1",
+    "markdown-exec[ansi]>=1.6.0",
+    "matplotlib>=3.8.0",
+    "mkdocstrings-python>=1.9.2",
 ]
-include = [
-    "LICENSE-Apache-2.0",
-    "LICENSE-CC-BY-NC-SA",
-    "README.md",
+
+[project.optional-dependencies]
+dev = [
+    "ipython>=8.7.0",
+    "tqdm>=4.0.0",
+]
+lint = [
+    "black>=22.8.0",
+    "pylint>=2.15.3",
+    "flake8>=5.0.4",
+    "mypy>=0.981",
+    "isort>=5.10.1",
+    "pre-commit>=3.8.0",
 ]
 
 
-[tool.poetry.dependencies]
-python = ">=3.9,<3.13"
+[project.urls]
+Homepage = "https://shenxiangzhuang.github.io/beer/"
+Repository = "https://github.com/shenxiangzhuang/beer"
 
+[tool.setuptools]
+packages = ["beer"]
+include-package-data = true
 
-[tool.poetry.group.dev.dependencies]
-ipython = "^8.7.0"
-tqdm = {version = "^4.0.0", optional = true}
-
-
-[tool.poetry.group.lint.dependencies]
-black = "^22.8.0"
-pylint = "^2.15.3"
-flake8 = "^5.0.4"
-mypy = "^0.981"
-isort = "^5.10.1"
-pre-commit = "^3.4.0"
-
-[tool.poetry.group.test.dependencies]
-pytest = "^7.1.3"
-pytest-cov = "^4.0.0"
-hypothesis = "^6.61.0"
-
-[tool.poetry.group.docs.dependencies]
-mkdocs = "^1.5.3"
-mkdocs-material = "^9.4.14"
-mkdocs-bibtex = "^2.11.0"
-mkdocstrings = "^0.24.0"
-mkdocs-material-extensions = "^1.3.1"
-mkdocs-git-revision-date-localized-plugin = "^1.2.4"
-mkdocs-git-committers-plugin-2 = "^2.3.0"
-mkdocs-autorefs = "^0.5.0"
-pymdown-extensions = "^10.3"
-mkdocs-simple-hooks = "^0.1.5"
-mkdocs-version-annotations = "^1.0.0"
-mkdocs-include-markdown-plugin = "^6.0.1"
-markdown-exec = {extras = ["ansi"], version = "^1.6.0"}
-matplotlib = "^3.8.0"
-mkdocstrings-python = "^1.9.2"
-
-
-[[tool.poetry.source]]
-name = "tsinghua"
-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
-priority = "primary"
-
-
-[[tool.poetry.source]]
-name = "PyPI"
-priority = "supplemental"
+[tool.setuptools.package-data]
+"*" = ["LICENSE-Apache-2.0", "LICENSE-CC-BY-NC-SA", "README.md"]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-# Development tool configuration
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
 
 [tool.black]
 line-length = 88
@@ -115,16 +95,13 @@ disable = [
 max-line-length = 88
 
 [tool.pytest.ini_options]
-# TODO: change cov percent to 90
 addopts = "-v --cov=toydl --cov-fail-under 0 --cov-report=term --cov-report=xml --cov-report=html"
 testpaths = [
     "tests",
 ]
-# Note that everything past the : after the mark name is an optional description.
 markers = [
     "operator: operator related tests",
 ]
-
 
 [tool.coverage.run]
 omit = [
