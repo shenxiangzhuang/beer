@@ -212,3 +212,74 @@
                 &= e - 1。
             \end{align}
         $$
+
+
+### Solution2
+??? success "Solution2"
+
+    === "English"
+
+        Define the indicator variable $X_i$:
+
+        - $X_i=1$: The sequence remains strictly increasing before the $i$-th element
+          - $X_i=0$: The sequence is no longer strictly increasing before the $i$-th element
+
+        Define the sequence length $L$ as the number of $X_i$ that are 1, i.e., the number of elements before the sequence stops being strictly increasing.
+        Therefore, the sequence length $L$ can be expressed as the sum of these indicator variables:
+
+        $$
+            L = \sum_{i}^{\infty}X_i
+        $$
+
+        According to the linearity of expectation, we have:
+
+        $$
+            E[L] = E \left[ \sum_{i}^{\infty}X_i \right] = \sum_{i}^{\infty}E[X_i]
+        $$
+
+        Now let's calculate $E[X_i]$. To ensure $E[X_i] = 1$, the sequence formed by all points before the $i$-th point must be strictly increasing.
+        The probability of randomly selecting $i$ points in the interval $[0, 1]$ such that they form a strictly increasing sequence is $\frac{1}{i!}$:
+
+        $$
+            E[X_i] = \frac{1}{i!}
+        $$
+
+        Adding up all $E[X_i]$, we get:
+
+        $$
+            E[L] = \sum_{i=1}^{\infty}\frac{1}{i!} = e - 1
+        $$
+
+    === "中文"
+
+        定义指示变量$X_i$:
+
+        - $X_i=1$: 序列在第$i$个元素之前保持单调递增
+        - $X_i=0$: 序列在第$i$个元素之前不再保持单调递增
+
+
+        定义序列长度$L$是所有$X_i$为 1 的个数，即序列在停止前的元素数目。
+        因此，序列长度$L$可以表示为这些指示变量的和：
+
+        $$
+            L = \sum_{i}^{\infty}X_i
+        $$
+
+        根据期望值的线性性质，我们有：
+
+        $$
+            E[L] = E \left[ \sum_{i}^{\infty}X_i \right] = \sum_{i}^{\infty}E[X_i]
+        $$
+
+        下面我们来计算$E[X_i]$, 要保证$E[X_i] = 1$，需要第$i$个点之前所有点形成的序列是单调递增的。
+        在$[0, 1]$区间内随机取$i$个点，使其严格递增的概率是$\frac{1}{i!}$:
+
+        $$
+            E[X_i] = \frac{1}{i!}
+        $$
+
+        将所有$E[X_i]$相加，得到：
+
+        $$
+            E[L] = \sum_{i=1}^{\infty}\frac{1}{i!} = e - 1
+        $$
