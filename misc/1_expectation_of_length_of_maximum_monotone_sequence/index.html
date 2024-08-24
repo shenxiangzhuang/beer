@@ -728,6 +728,19 @@
   </li>
           
           
+          
+            <li class="md-nav__item">
+    <a href="#solution3-simulation" class="md-nav__link">
+      <span class="md-ellipsis">
+        Solution3: Simulation
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
         </ul>
       </nav>
     
@@ -929,6 +942,19 @@
   </li>
           
           
+          
+            <li class="md-nav__item">
+    <a href="#solution3-simulation" class="md-nav__link">
+      <span class="md-ellipsis">
+        Solution3: Simulation
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
         </ul>
       </nav>
     
@@ -972,7 +998,11 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">English</label><label for="__tabbed_1_2">中文</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Remark: <span class="arithmatex">\(\mathbb{N} = \{ 1,2,\dots \}\)</span>.</p>
+<p>Keep picking points uniformly randomly on [0,1].
+If your current sequence is a monotonically increasing sequence, continue.
+What is the expected length of this monotonous sequence?</p>
+<p>The formal definition of the current problem is as follows:
+Remark: <span class="arithmatex">\(\mathbb{N} = \{ 1,2,\dots \}\)</span>.</p>
 <p>Consider the space <span class="arithmatex">\(X = [0,1]^\mathbb{N}\)</span>, where a probability measure <span class="arithmatex">\(p\)</span> is defined by selecting a sequence of points uniformly from the interval <span class="arithmatex">\([0,1]\)</span>. And given function <span class="arithmatex">\(f: X \rightarrow [0,1]\)</span> as:</p>
 <div class="arithmatex">\[
 f(\gamma) = \sup \{
@@ -982,7 +1012,9 @@ f(\gamma) = \sup \{
 <p>Calculate <span class="arithmatex">\(E[f(X)]\)</span>.</p>
 </div>
 <div class="tabbed-block">
-<p>备注：<span class="arithmatex">\(\mathbb{N} = \{ 1,2,\dots \}\)</span>.</p>
+<p>在[0,1]上均匀随机的一直取点，如果你当前的序列是一个单调递增序列就继续，请问这个单调序列的期望长度是多少？</p>
+<p>当前问题的形式化定义如下:
+备注：<span class="arithmatex">\(\mathbb{N} = \{ 1,2,\dots \}\)</span>.</p>
 <p>设空间<span class="arithmatex">\(X = [0,1]^\mathbb{N}\)</span>，其中概率测度<span class="arithmatex">\(p\)</span>通过从区间<span class="arithmatex">\([0,1]\)</span>中均匀选择一个序列的点来定义。给定函数<span class="arithmatex">\(f: X \rightarrow [0,1]\)</span>如下：</p>
 <div class="arithmatex">\[
 f(\gamma) = \sup \{
@@ -1011,7 +1043,7 @@ f(\gamma) = \sup \{
 <h2 id="solutions">Solutions<a class="headerlink" href="#solutions" title="Permanent link">&para;</a></h2>
 <h3 id="solution1">Solution1<a class="headerlink" href="#solution1" title="Permanent link">&para;</a></h3>
 <details class="success">
-<summary>Solution1</summary>
+<summary>Solution1: Analysis</summary>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">English</label><label for="__tabbed_3_2">中文</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1156,7 +1188,7 @@ And</p>
 </details>
 <h3 id="solution2">Solution2<a class="headerlink" href="#solution2" title="Permanent link">&para;</a></h3>
 <details class="success">
-<summary>Solution2</summary>
+<summary>Solution2: Analysis</summary>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">English</label><label for="__tabbed_4_2">中文</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1208,6 +1240,97 @@ The probability of randomly selecting <span class="arithmatex">\(i\)</span> poin
 <div class="arithmatex">\[
     E[f(X)] = \sum_{i=1}^{\infty}\frac{1}{i!} = e - 1
 \]</div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="solution3-simulation">Solution3: Simulation<a class="headerlink" href="#solution3-simulation" title="Permanent link">&para;</a></h3>
+<details class="success">
+<summary>Solution3: Simulation</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">English</label><label for="__tabbed_5_2">中文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>We can directly simulate the process of taking points to
+find the mean of the length of the monotone sequence as the numerical solution to this problem:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+
+<span class="k">def</span> <span class="nf">random_point</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">run_once</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="n">pre_point</span> <span class="o">=</span> <span class="n">random_point</span><span class="p">()</span>
+    <span class="n">sequence_length</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">next_point</span> <span class="o">=</span> <span class="n">random_point</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">next_point</span> <span class="o">&lt;=</span> <span class="n">pre_point</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">sequence_length</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">pre_point</span> <span class="o">=</span> <span class="n">next_point</span>
+    <span class="k">return</span> <span class="n">sequence_length</span>
+
+
+<span class="k">def</span> <span class="nf">simulation</span><span class="p">(</span><span class="n">run_nums</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1000000</span><span class="p">):</span>
+    <span class="n">total_length</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">run_nums</span><span class="p">):</span>
+        <span class="n">sequence_length</span> <span class="o">=</span> <span class="n">run_once</span><span class="p">()</span>
+        <span class="n">total_length</span> <span class="o">+=</span> <span class="n">sequence_length</span>
+    <span class="n">avg_length</span> <span class="o">=</span> <span class="n">total_length</span> <span class="o">/</span> <span class="n">run_nums</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average length: </span><span class="si">{</span><span class="n">avg_length</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;e - 1 = </span><span class="si">{</span><span class="n">math</span><span class="o">.</span><span class="n">e</span><span class="o">-</span><span class="mi">1</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">avg_length</span>
+
+
+<span class="n">simulation</span><span class="p">()</span>
+</code></pre></div>
+<div class="result">
+<p>Average length: 1.717814</p>
+<p>e - 1 = 1.718281828459045</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>我们可以直接模拟取点的过程来求出单调序列长度的均值作为该问题的数值解:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+
+<span class="k">def</span> <span class="nf">random_point</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">run_once</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="n">pre_point</span> <span class="o">=</span> <span class="n">random_point</span><span class="p">()</span>
+    <span class="n">sequence_length</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">next_point</span> <span class="o">=</span> <span class="n">random_point</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">next_point</span> <span class="o">&lt;=</span> <span class="n">pre_point</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">sequence_length</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">pre_point</span> <span class="o">=</span> <span class="n">next_point</span>
+    <span class="k">return</span> <span class="n">sequence_length</span>
+
+
+<span class="k">def</span> <span class="nf">simulation</span><span class="p">(</span><span class="n">run_nums</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1000000</span><span class="p">):</span>
+    <span class="n">total_length</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">run_nums</span><span class="p">):</span>
+        <span class="n">sequence_length</span> <span class="o">=</span> <span class="n">run_once</span><span class="p">()</span>
+        <span class="n">total_length</span> <span class="o">+=</span> <span class="n">sequence_length</span>
+    <span class="n">avg_length</span> <span class="o">=</span> <span class="n">total_length</span> <span class="o">/</span> <span class="n">run_nums</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average length: </span><span class="si">{</span><span class="n">avg_length</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;e - 1 = </span><span class="si">{</span><span class="n">math</span><span class="o">.</span><span class="n">e</span><span class="o">-</span><span class="mi">1</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">avg_length</span>
+
+
+<span class="n">simulation</span><span class="p">()</span>
+</code></pre></div>
+<div class="result">
+<p>Average length: 1.719657</p>
+<p>e - 1 = 1.718281828459045</p>
+</div>
 </div>
 </div>
 </div>
