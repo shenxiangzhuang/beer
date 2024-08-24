@@ -5,7 +5,12 @@
 ???+ question "Question"
 
     === "English"
+        Keep picking points uniformly randomly on [0,1].
+        If your current sequence is a monotonically increasing sequence, continue.
+        What is the expected length of this monotonous sequence?
 
+
+        The formal definition of the current problem is as follows:
         Remark: $\mathbb{N} = \{ 1,2,\dots \}$.
 
         Consider the space $X = [0,1]^\mathbb{N}$, where a probability measure $p$ is defined by selecting a sequence of points uniformly from the interval $[0,1]$. And given function $f: X \rightarrow [0,1]$ as:
@@ -20,6 +25,10 @@
 
     === "中文"
 
+        在[0,1]上均匀随机的一直取点，如果你当前的序列是一个单调递增序列就继续，请问这个单调序列的期望长度是多少？
+
+
+        当前问题的形式化定义如下:
         备注：$\mathbb{N} = \{ 1,2,\dots \}$.
 
         设空间$X = [0,1]^\mathbb{N}$，其中概率测度$p$通过从区间$[0,1]$中均匀选择一个序列的点来定义。给定函数$f: X \rightarrow [0,1]$如下：
@@ -48,7 +57,7 @@
 ## Solutions
 
 ### Solution1
-??? success "Solution1"
+??? success "Solution1: Analysis"
 
     === "English"
 
@@ -215,7 +224,7 @@
 
 
 ### Solution2
-??? success "Solution2"
+??? success "Solution2: Analysis"
 
     === "English"
 
@@ -283,3 +292,27 @@
         $$
             E[f(X)] = \sum_{i=1}^{\infty}\frac{1}{i!} = e - 1
         $$
+
+
+### Solution3: Simulation
+
+
+??? success "Solution3: Simulation"
+
+    === "English"
+
+        We can directly simulate the process of taking points to
+        find the mean of the length of the monotone sequence as the numerical solution to this problem:
+
+        ```python exec="true" source="material-block" session="misc-1"
+        --8<-- "docs/misc/snippet/1_monotone_sequence.py:solution"
+        ```
+
+
+    === "中文"
+
+        我们可以直接模拟取点的过程来求出单调序列长度的均值作为该问题的数值解:
+
+        ```python exec="true" source="material-block" session="misc-1"
+        --8<-- "docs/misc/snippet/1_monotone_sequence.py:solution"
+        ```
