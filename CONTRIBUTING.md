@@ -30,7 +30,7 @@ We use `pyproject.toml` to manage project dependencies. Here's how to set up you
 
 3. Create a new virtual environment and install dependencies:
    ```
-   uv venv
+   uv venv -p 3.12
    source .venv/bin/activate  # On Unix or MacOS
    .venv\Scripts\activate  # On Windows
    uv pip install -e ".[dev,lint]"

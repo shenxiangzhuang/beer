@@ -14,10 +14,15 @@
       <img src="https://raw.githubusercontent.com/shenxiangzhuang/beer/d14926ae0bf5f7163dd062ca5ff65eab270e839a/asset/qr_code/ds_group.png" style="width: 30%" />
       <img src="https://raw.githubusercontent.com/shenxiangzhuang/beer/d14926ae0bf5f7163dd062ca5ff65eab270e839a/asset/qr_code/mathew.png" style="width: 30%;" />
     </div>
-  当群聊二维码失效时，可以先添加我的微信(微信号: `MathewShen`)，备注"beer"。
+  当群聊二维码失效时，可以先添加我的微信 (微信号：`MathewShen`)，备注"beer"。
 
 </details>
 
+## Contributing
+- See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Code of Conduct
+- See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 
 ## License
