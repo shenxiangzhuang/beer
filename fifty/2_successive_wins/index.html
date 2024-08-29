@@ -1373,7 +1373,7 @@ the reward if he chooses the sequence CFC.</p>
 <span class="n">simulation</span><span class="p">()</span>
 </code></pre></div>
 <div class="result">
-<p>FCF: 0.3889, CFC: 0.5201</p>
+<p>FCF: 0.4324, CFC: 0.4522</p>
 </div>
 <p>Since the probabilities <code>f</code> and <code>c</code> for winning against the father and the champion are randomly generated using <code>get_prior_prob</code>, the results may vary for each simulation. However, we can observe that the probability for the CFC sequence is slightly higher.</p>
 <p>If we carefully analyze this simulation experiment, we can identify a limitation: it only simulates one pair of <code>f</code> and <code>c</code> probabilities. Therefore, the higher probability for CFC compared to FCF might be due to chance. To validate if CFC consistently has a higher probability than FCF, we need to simulate different configurations of <code>f</code> and <code>c</code>.</p>
@@ -1441,7 +1441,7 @@ the reward if he chooses the sequence CFC.</p>
 <span class="n">simulation</span><span class="p">()</span>
 </code></pre></div>
 <div class="result">
-<p>FCF: 0.3961, CFC: 0.5205</p>
+<p>FCF: 0.4235, CFC: 0.4469</p>
 </div>
 <p>因为这里赢得父亲和冠军的概率<code>f</code>, <code>c</code>是通过<code>get_prior_prob</code>随机生成，
 所以每次模拟的结果会不相同。但是都能够看到CFC顺序的概率更高一些.</p>
