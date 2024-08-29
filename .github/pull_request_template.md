@@ -16,7 +16,7 @@
 - [ ] Other (please specify)
 
 ## Checklist
-
+- [ ] I have read the **CONTRIBUTING** document
 - [ ] I have tested my changes locally
 - [ ] My code follows the project's coding style
 - [ ] I have updated the documentation accordingly
