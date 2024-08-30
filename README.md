@@ -19,10 +19,10 @@
 </details>
 
 ## Contributing
-- See [CONTRIBUTING.md](CONTRIBUTING.md)
+- See [CONTRIBUTING.md](https://github.com/shenxiangzhuang/beer/blob/master/CONTRIBUTING.md)
 
 ## Code of Conduct
-- See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- See [CODE_OF_CONDUCT.md](https://github.com/shenxiangzhuang/beer/blob/master/CODE_OF_CONDUCT.md)
 
 
 ## License
