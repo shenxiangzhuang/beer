@@ -19,10 +19,10 @@
 </details>
 
 ## Contributing
-- See [CONTRIBUTING](https://raw.githubusercontent.com/shenxiangzhuang/beer/master/CONTRIBUTING.md)
+- See [CONTRIBUTING](https://github.com/shenxiangzhuang/beer/blob/master/CONTRIBUTING.md)
 
 ## Code of Conduct
-- See [CODE_OF_CONDUCT](https://raw.githubusercontent.com/shenxiangzhuang/beer/master/CODE_OF_CONDUCT.md)
+- See [CODE_OF_CONDUCT](https://github.com/shenxiangzhuang/beer/blob/master/CODE_OF_CONDUCT.md)
 
 
 ## License
