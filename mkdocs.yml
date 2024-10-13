@@ -3,6 +3,7 @@ repo_url: https://github.com/shenxiangzhuang/beer
 repo_name: shenxiangzhuang/beer
 site_description: A collection of challenging problems in probability and statistics, with solutions and discussions.
 site_author: Xiangzhuang Shen
+site_url: https://shenxiangzhuang.github.io/beer
 copyright: Beer © 2023 by Xiangzhuang Shen is licensed under CC BY-NC-SA 4.0 & Apache License 2.0
 
 # Page tree
