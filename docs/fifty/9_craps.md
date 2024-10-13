@@ -1,4 +1,4 @@
-# Perfect Bridge Hand
+# Craps
 
 ## Problem
 
@@ -29,11 +29,11 @@
 
     === "English"
 
-        TBD
+        Focus on breaking down the game into three possible outcomes on the first roll: win immediately, lose immediately, or get a point number. Then calculate the probabilities for each scenario.
 
     === "中文"
 
-        TBD
+        将游戏分解为第一次掷骰子的三种可能结果：立即获胜、立即失败或得到一个点数。然后计算每种情况的概率。
 
 
 ## Solutions
@@ -44,13 +44,79 @@
 
     === "English"
 
-        TODO
+        First, we can list all possible point totals and their corresponding probabilities:
+
+        |    | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+        | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+        | Probability | 1/36 | 2/36 | 3/36 | 4/36 | 5/36 | 6/36 | 5/36 | 4/36 | 3/36 | 2/36 | 1/36 |
+
+        Let's denote winning on the first roll as $W_1$, losing on the first roll as $L_1$, and getting a point number as $P_1$.
+
+        The probability of winning on the first roll is:
+
+        $$
+        P(W_1) = P(7, 11) = \frac{6}{36} + \frac{2}{36} = \frac{8}{36} = \frac{2}{9}
+        $$
+
+        Similarly, the probability of losing on the first roll is:
+
+        $$
+        P(L_1) = P(2, 3, 12) = \frac{1}{36} + \frac{2}{36} + \frac{1}{36} = \frac{4}{36} = \frac{1}{9}
+        $$
+
+        If a point number is rolled on the first roll, it could be 4, 5, 6, 8, 9, or 10.
+        Let's take the case of rolling a 4 as an example and calculate the probability of the player losing:
+
+        $$
+        \begin{align}
+        P(L_{p4}) &= P(7) + (1 - P(4) - P(7)) \cdot P(7) + (1 - P(4) - P(7))^2 \cdot P(7) + \cdots \\
+                  &= P(7) \cdot (1 + (1 - P(4) - P(7)) + (1 - P(4) - P(7))^2 + \cdots) \\
+                  &= P(7) \cdot \frac{1}{1 - (1 - P(4) - P(7))} \\
+                  &= P(7) \cdot \frac{1}{P(4) + P(7)} \\
+                  &= \frac{6}{36} \cdot \frac{1}{\frac{3}{36} + \frac{6}{36}} \\
+                  &= \frac{6}{36} \cdot \frac{1}{\frac{9}{36}} \\
+                  &= \frac{2}{3}
+        \end{align}
+        $$
+
+        Similarly, we can calculate the probabilities of losing when the point number is 5, 6, 8, 9, or 10:
+
+        $$
+        P(L_{p5}) = P(L_{p9}) = \frac{3}{5}
+        $$
+
+        $$
+        P(L_{p6}) = P(L_{p8}) = \frac{6}{11}
+        $$
+
+        $$
+        P(L_{p10}) = P(L_{p4}) = \frac{2}{3}
+        $$
+
+        From this, we can calculate the probability of the player winning after rolling a point number on the first roll:
+
+        $$
+        \begin{align}
+        P(L_p)  &= P(4) \cdot (1-P(L_{p4})) + P(5) \cdot (1-P(L_{p5})) + P(6) \cdot (1-P(L_{p6})) + P(8) \cdot (1-P(L_{p8})) + P(9) \cdot (1-P(L_{p9})) + P(10) (1-\cdot P(L_{p10})) \\
+                &= \frac{3}{36} \cdot (1-\frac{2}{3}) + \frac{4}{36} \cdot (1-\frac{3}{5}) + \frac{5}{36} \cdot (1-\frac{6}{11}) + \frac{5}{36} \cdot (1-\frac{6}{11}) + \frac{4}{36} \cdot (1-\frac{3}{5}) + \frac{3}{36} \cdot (1-\frac{2}{3}) \\
+                &= \frac{1}{36} + \frac{2}{45} + \frac{25}{396} + \frac{25}{396} + \frac{2}{45} + \frac{1}{36} \\
+                &= \frac{134}{495}
+        \end{align}
+        $$
+
+        Therefore, the total probability of the player winning is:
+
+        $$
+        P(W) = P(W_1) + P(W_p) = \frac{2}{9} + \frac{134}{495} = \frac{244}{495} \approx 0.49293
+        $$
+
+        So the probability of the player winning is approximately 49.293%.
 
     === "中文"
 
         首先，我们可以列出所有可能的点数和对应的概率：
 
-        | /   | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+        |    | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
         | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
         | 概率 | 1/36 | 2/36 | 3/36 | 4/36 | 5/36 | 6/36 | 5/36 | 4/36 | 3/36 | 2/36 | 1/36 |
 
@@ -123,8 +189,17 @@
 ??? success "Solution2: Simulation"
 
     === "English"
-        TODO
+
+        The overall process of the game is relatively simple, and we can simulate it through the following code:
+
+        ```python exec="true" source="material-block" session="fifty-9"
+        --8<-- "docs/fifty/snippet/9_craps.py:solution2"
+        ```
 
     === "中文"
 
-        TODO
+        游戏的过程总体比较简单，我们可以通过下面的代码来模拟:
+
+        ```python exec="true" source="material-block" session="fifty-9"
+        --8<-- "docs/fifty/snippet/9_craps.py:solution2"
+        ```
