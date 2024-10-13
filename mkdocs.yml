@@ -28,6 +28,7 @@ nav:
   - Blog:
       - blog/index.md
   - Changelog: CHANGELOG.md
+  - Contributing: contributing.md
   - Author's website: https://shenxiangzhuang.github.io/
 
 

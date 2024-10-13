@@ -43,73 +43,7 @@ This will install the project along with its dependencies, including development
 ### Adding a New Problem
 
 1. Create a new Markdown file in the appropriate directory (e.g., `docs/fifty/` for the Fifty Challenging Problems).
-2. Use the following template for your problem:
-
-   ```markdown
-   # Problem Title
-
-   ## Problem
-
-   ???+ question "Question"
-
-       === "English"
-
-           [English version of the problem]
-
-       === "中文"
-
-           [Chinese version of the problem]
-
-   ## Tip
-
-   ??? tip "Tip"
-
-       === "English"
-
-           [English version of the tip]
-
-       === "中文"
-
-           [Chinese version of the tip]
-
-   ## Solutions
-
-   ### Solution1: Analysis
-   ??? success "Solution1: Analysis"
-
-       === "English"
-
-           [Detailed solution explanation in English]
-
-       === "中文"
-
-           [Detailed solution explanation in Chinese]
-
-   ### Solution2: Simulation
-
-   ??? success "Solution2: Simulation"
-
-       === "English"
-
-           [Simulation approach explanation in English]
-
-           ```python exec="true" source="material-block" session="problem-id"
-           --8<-- "docs/fifty/snippet/problem_file.py:solution2"
-           ```
-
-           [Explanation of simulation results]
-
-       === "中文"
-
-           [Simulation approach explanation in Chinese]
-
-           ```python exec="true" source="material-block" session="problem-id"
-           --8<-- "docs/fifty/snippet/problem_file.py:solution2"
-           ```
-
-           [Explanation of simulation results in Chinese]
-   ```
-
+2. Use the similar [template]https://datahonor.com/beer/fifty/#problem-template) for your problem.
 3. Ensure you provide both English and Chinese versions for all sections.
 4. Include clear and detailed solutions, with both analytical and simulation approaches when applicable.
 5. Use code blocks with the `exec="true"` attribute for runnable Python code.
@@ -154,6 +88,6 @@ Before submitting your changes, test them locally using MkDocs:
 
 ## Code of Conduct
 
-Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms. You can find the full text of the Code of Conduct in the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file.
+Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms. You can find the full text of the Code of Conduct in the [CODE_OF_CONDUCT.md](https://github.com/shenxiangzhuang/beer/blob/master/CODE_OF_CONDUCT.md) file.
 
 Thank you for contributing to the Beer project!
