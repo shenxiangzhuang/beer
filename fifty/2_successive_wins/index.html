@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
     
     
       
@@ -339,6 +339,23 @@
     
   
   Changelog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contributing/" class="md-tabs__link">
+        
+  
+    
+  
+  Contributing
 
       </a>
     </li>
@@ -977,6 +994,26 @@
   
   
     <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="https://shenxiangzhuang.github.io/" class="md-nav__link">
         
   
@@ -1373,7 +1410,7 @@ the reward if he chooses the sequence CFC.</p>
 <span class="n">simulation</span><span class="p">()</span>
 </code></pre></div>
 <div class="result">
-<p>FCF: 0.254, CFC: 0.3087</p>
+<p>FCF: 0.4834, CFC: 0.5985</p>
 </div>
 <p>Since the probabilities <code>f</code> and <code>c</code> for winning against the father and the champion are randomly generated using <code>get_prior_prob</code>, the results may vary for each simulation. However, we can observe that the probability for the CFC sequence is slightly higher.</p>
 <p>If we carefully analyze this simulation experiment, we can identify a limitation: it only simulates one pair of <code>f</code> and <code>c</code> probabilities. Therefore, the higher probability for CFC compared to FCF might be due to chance. To validate if CFC consistently has a higher probability than FCF, we need to simulate different configurations of <code>f</code> and <code>c</code>.</p>
@@ -1441,7 +1478,7 @@ the reward if he chooses the sequence CFC.</p>
 <span class="n">simulation</span><span class="p">()</span>
 </code></pre></div>
 <div class="result">
-<p>FCF: 0.2485, CFC: 0.3038</p>
+<p>FCF: 0.4531, CFC: 0.5188</p>
 </div>
 <p>因为这里赢得父亲和冠军的概率<code>f</code>, <code>c</code>是通过<code>get_prior_prob</code>随机生成，
 所以每次模拟的结果会不相同。但是都能够看到CFC顺序的概率更高一些.</p>
