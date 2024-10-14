@@ -1,4 +1,9 @@
-# Beer: Challenging Problems in Probability and Statistics
+<p align="center">
+    <img src="./docs/asset/image/beer.jpeg" width="350" style="margin-bottom: 0.1;"/>
+<p>
+<h2 align="center"> <a href="https://arxiv.org/abs/2311.10122">Beer: Challenging Problems in Probability and Statistics</a></h2>
+
+
 
 ## Documentation
 - [https://shenxiangzhuang.github.io/beer/](https://shenxiangzhuang.github.io/beer/)
