@@ -1,9 +1,12 @@
-<p align="center">
-    <img src="./docs/asset/image/beer.jpeg" width="350" style="margin-bottom: 0.1;"/>
-<p>
-<h2 align="center"> <a href="https://arxiv.org/abs/2311.10122">Beer: Challenging Problems in Probability and Statistics</a></h2>
+<div style="text-align: center;">
+    <img src="https://github.com/shenxiangzhuang/beer/blob/f5937423869e54ea6aaa71ee60f5e82b1cb30c80/docs/asset/image/beer.jpeg?raw=true" width="350"/>
+</div>
 
-
+<div style="text-align: center;">
+  <h2 >
+    <a href="https://github.com/shenxiangzhuang/beer">Beer: Challenging Problems in Probability and Statistics</a>
+  </h2>
+</div>
 
 ## Documentation
 - [https://shenxiangzhuang.github.io/beer/](https://shenxiangzhuang.github.io/beer/)
@@ -15,7 +18,7 @@
 ## WeChat Group
 <details>
   <summary>我们有一个小的微信群，欢迎加入一起讨论有趣的问题！</summary>
-  可以先添加我的微信 (微信号：`MathewShen`)，备注"beer"。
+  可以先添加我的微信 (微信号：<code>MathewShen</code>)，备注<code>beer</code>。
 </details>
 
 ## Contributing
