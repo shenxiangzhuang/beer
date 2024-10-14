@@ -1,1 +1,1 @@
---8<-- "https://raw.githubusercontent.com/shenxiangzhuang/beer/master/README.md"
+--8<-- "README.md"
