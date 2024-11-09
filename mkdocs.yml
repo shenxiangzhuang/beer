@@ -27,6 +27,7 @@ nav:
   - Miscellaneous:
     - misc/index.md
     - "1. Expectation of Length of Maximum Monotone Sequence": misc/1_expectation_of_length_of_maximum_monotone_sequence.md
+    - "2. Bet unital win all the money": misc/2_bet_until_win.md
 
   - Blog:
       - blog/index.md
