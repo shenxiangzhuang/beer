@@ -39,7 +39,6 @@ dependencies = [
     "matplotlib>=3.8.0",
     "mkdocstrings-python>=1.9.2",
     "mkdocs-rss-plugin>=1.15.0",
-    "sympy>=1.13.3",
 ]
 
 [project.optional-dependencies]
