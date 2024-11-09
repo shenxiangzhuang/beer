@@ -145,7 +145,7 @@
                 # matrix rows: p2~p10
                 for i in range(2, 11):
                     matrix[i][i-1:i+2] = Rational(-1, 2), 1, Rational(-1, 2)
-                # matrix rows: p10, p11
+                # matrix rows: p11
                 matrix[11][-1] = 1
 
                 A = Matrix(matrix)
@@ -286,7 +286,7 @@
                 # matrix rows: p2~p10
                 for i in range(2, 11):
                     matrix[i][i-1:i+2] = Rational(-1, 2), 1, Rational(-1, 2)
-                # matrix rows: p10, p11
+                # matrix rows: p11
                 matrix[11][-1] = 1
 
                 A = Matrix(matrix)
