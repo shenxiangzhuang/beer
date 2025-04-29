@@ -224,6 +224,9 @@
 
 
 ### Solution2
+
+> This solution is authored by [@yuanhang](https://yuanhang0.github.io/).
+
 ??? success "Solution2: Analysis"
 
     === "English"
