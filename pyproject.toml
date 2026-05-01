@@ -50,7 +50,7 @@ lint = [
     "black>=22.8.0",
     "pylint>=2.15.3",
     "flake8>=5.0.4",
-    "mypy>=0.981",
+    "mypy>=1.20.2",
     "isort>=5.10.1",
     "pre-commit>=3.8.0",
 ]
